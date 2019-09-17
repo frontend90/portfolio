@@ -1,0 +1,82 @@
+.portfolio
+  &-nav 
+    display: flex
+    justify-content: center
+    margin-top: 45px
+    & a 
+      +grey 
+      +reg 
+      font-size: 15px 
+      margin-left: 30px
+      transition: 0.2s
+      &:hover
+        +black
+        +bold  
+      &:first-of-type
+        margin-left: 0
+  &-cards 
+    margin-top: 30px 
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    & button 
+      display: flex
+      margin: 0 auto
+      font-size: 14px 
+      +bold
+      +black 
+      letter-spacing: 0.7px 
+      text-transform: uppercase
+      width: 190px 
+      height: 40px 
+      border: 3px solid 
+      justify-content: center
+      align-items: center
+      border-radius: 20px 
+      margin-top: 40px 
+      transition: 0.2s
+      &:hover
+        background: #2b2a2c 
+        color: #ffffff
+  &-card 
+    max-width: 370px 
+    border-radius: 5px 
+    box-shadow: 0 0px 10px (#6a696b) 
+    margin-bottom: 30px 
+    cursor: pointer
+    transition: 0.5s
+    &:nth-child(7)
+      margin-bottom: 0
+    &:nth-child(8)
+      margin-bottom: 0
+    &:nth-child(9)
+      margin-bottom: 0 
+    &:hover
+      transform: scale(0.9)
+    & img 
+      border-top-left-radius: 5px 
+      border-top-right-radius: 5px 
+    & .desc 
+      margin-top: 15px
+      margin-bottom: 15px
+      margin-left: 15px 
+      & p 
+        text-transform: uppercase
+        font-size: 12px 
+        +reg 
+        +black
+        letter-spacing: 0.6px
+      & .date 
+        display: flex
+        justify-content: space-between
+        & h4
+          text-transform: uppercase
+          font-size: 16px 
+          +bold 
+          +black
+        & span 
+          text-transform: uppercase
+          font-size: 16px 
+          +bold 
+          +black
+          margin-right: 15px 

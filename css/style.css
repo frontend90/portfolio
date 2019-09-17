@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1170px;
   margin: 0 auto;
 }
 
@@ -83,7 +83,7 @@ h1, h2, h3, h4, h5, h6, p {
   color: #2b2a2c;
   text-transform: uppercase;
   font-size: 14px;
-  letter-spacing: 0.48px;
+  letter-spacing: 0.7px;
   margin-right: 35px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -103,7 +103,7 @@ h1, h2, h3, h4, h5, h6, p {
   color: #2b2a2c;
   font-size: 14px;
   text-transform: uppercase;
-  letter-spacing: 0.48px;
+  letter-spacing: 0.7px;
   border: 2px solid;
   border-radius: 20px;
   width: 125px;
@@ -215,7 +215,7 @@ h1, h2, h3, h4, h5, h6, p {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   color: #6a696b;
-  letter-spacing: 0.55px;
+  letter-spacing: 0.8px;
   width: 200px;
   height: 50px;
   border: 1px solid;
@@ -242,5 +242,152 @@ h1, h2, h3, h4, h5, h6, p {
 
 .header-line {
   border-bottom: 1px solid rgba(43, 42, 44, 0.1);
+}
+
+.portfolio-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 45px;
+}
+
+.portfolio-nav a {
+  color: #6a696b;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  margin-left: 30px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.portfolio-nav a:hover {
+  color: #2b2a2c;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.portfolio-nav a:first-of-type {
+  margin-left: 0;
+}
+
+.portfolio-cards {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.portfolio-cards button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #2b2a2c;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  width: 190px;
+  height: 40px;
+  border: 3px solid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+  margin-top: 40px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.portfolio-cards button:hover {
+  background: #2b2a2c;
+  color: #ffffff;
+}
+
+.portfolio-card {
+  max-width: 370px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0px 10px #6a696b;
+          box-shadow: 0 0px 10px #6a696b;
+  margin-bottom: 30px;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.portfolio-card:nth-child(7) {
+  margin-bottom: 0;
+}
+
+.portfolio-card:nth-child(8) {
+  margin-bottom: 0;
+}
+
+.portfolio-card:nth-child(9) {
+  margin-bottom: 0;
+}
+
+.portfolio-card:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.portfolio-card img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.portfolio-card .desc {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+
+.portfolio-card .desc p {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #2b2a2c;
+  letter-spacing: 0.6px;
+}
+
+.portfolio-card .desc .date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.portfolio-card .desc .date h4 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #2b2a2c;
+}
+
+.portfolio-card .desc .date span {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #2b2a2c;
+  margin-right: 15px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -216,7 +216,7 @@ h1, h2, h3, h4, h5, h6, p {
   font-weight: 400;
   color: #6a696b;
   letter-spacing: 0.8px;
-  width: 200px;
+  width: 170px;
   height: 50px;
   border: 1px solid;
   -webkit-box-pack: center;
@@ -229,6 +229,10 @@ h1, h2, h3, h4, h5, h6, p {
   margin-left: 15px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+}
+
+.header-title .desc .btn button:last-of-type {
+  width: 200px;
 }
 
 .header-title .desc .btn button:first-of-type {
@@ -389,5 +393,84 @@ h1, h2, h3, h4, h5, h6, p {
   font-weight: 700;
   color: #2b2a2c;
   margin-right: 15px;
+}
+
+.about {
+  margin-top: 130px;
+}
+
+.about-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about-me {
+  max-width: 500px;
+}
+
+.about-me h4 {
+  font-size: 45px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #2b2a2c;
+  text-transform: uppercase;
+}
+
+.about-me h3 {
+  font-size: 92px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #dedede;
+  text-transform: uppercase;
+}
+
+.about-me p {
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #6a696b;
+  margin-bottom: 50px;
+}
+
+.about-btn button {
+  width: 170px;
+  height: 50px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border: 1px solid;
+  border-radius: 25px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #6a696b;
+  letter-spacing: 0.8px;
+  margin-left: 20px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.about-btn button:last-of-type {
+  width: 200px;
+}
+
+.about-btn button:first-of-type {
+  margin-left: 0;
+}
+
+.about-btn button:hover {
+  color: #ffffff;
+  background: #2b2a2c;
 }
 /*# sourceMappingURL=style.css.map */

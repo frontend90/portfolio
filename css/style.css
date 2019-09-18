@@ -7,6 +7,11 @@ body {
   src: url("../fonts/fa-brands-400.ttf");
 }
 
+@font-face {
+  font-family: 'fa-solid-900';
+  src: url("../fonts/fa-solid-900.ttf");
+}
+
 .container {
   max-width: 1170px;
   margin: 0 auto;
@@ -472,5 +477,81 @@ h1, h2, h3, h4, h5, h6, p {
 .about-btn button:hover {
   color: #ffffff;
   background: #2b2a2c;
+}
+
+.test {
+  background: url(../images/test/bg.png) no-repeat;
+  background-size: cover;
+  max-height: 230px;
+  margin-top: 140px;
+}
+
+.test-content p {
+  height: 230px;
+  width: 820px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 32px;
+}
+
+.test-author .face {
+  width: 95px;
+  height: 95px;
+  background: #332f30;
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+  margin: 0 auto;
+  margin-top: -48px;
+}
+
+.test-author .name {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #2b2a2c;
+}
+
+.test-author .prof {
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #6a696b;
+}
+
+.test-author .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5px;
+}
+
+.test-author .social .fas {
+  font-family: 'fa-solid-900';
+  font-size: 14px;
+  color: #2b2a2c;
+  margin-left: 5px;
+}
+
+.test-author .social .fas:first-of-type {
+  margin-left: 0;
 }
 /*# sourceMappingURL=style.css.map */

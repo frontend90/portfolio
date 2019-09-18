@@ -554,4 +554,144 @@ h1, h2, h3, h4, h5, h6, p {
 .test-author .social .fas:first-of-type {
   margin-left: 0;
 }
+
+.read {
+  margin-top: 230px;
+}
+
+.read-title {
+  text-align: center;
+}
+
+.read-title h3 {
+  text-transform: uppercase;
+  font-size: 45px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #2b2a2c;
+}
+
+.read-title p {
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #6a696b;
+  margin-bottom: 60px;
+}
+
+.read-posts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.read-posts .post {
+  max-width: 370px;
+}
+
+.read-posts .post .img {
+  background: #717072;
+  width: 370px;
+  height: 255px;
+}
+
+.read-posts .post .img .date {
+  background: #2b2a2c;
+  width: 75px;
+  height: 75px;
+}
+
+.read-posts .post .img .date span {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  display: block;
+  text-align: center;
+}
+
+.read-posts .post .desc {
+  margin-top: 20px;
+}
+
+.read-posts .post .desc h4 {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #2b2a2c;
+  letter-spacing: 0.9px;
+  margin-bottom: 10px;
+}
+
+.read-posts .post .desc span {
+  display: block;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #2b2a2c;
+  letter-spacing: 0.6px;
+  margin-bottom: 15px;
+}
+
+.read-posts .post .desc p {
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #6a696b;
+  line-height: 24px;
+}
+
+.read-posts .post .desc button {
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+  width: 130px;
+  height: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #6a696b;
+  letter-spacing: 0.7px;
+  border: 2px solid;
+  border-radius: 20px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.read-posts .post .desc button:hover {
+  color: #ffffff;
+  background: #2b2a2c;
+}
+
+.read-item {
+  margin-top: 15px;
+}
+
+.read-item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #6a696b;
+  letter-spacing: 0.7px;
+  text-decoration: underline;
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,88 @@
+.read 
+  margin-top: 230px 
+  &-title 
+    text-align: center
+    & h3 
+      text-transform: uppercase
+      font-size: 45px 
+      +bold 
+      +black 
+    & p 
+      font-size: 18px 
+      +reg 
+      +grey 
+      margin-bottom: 60px 
+  &-posts 
+    display: flex
+    justify-content: space-between
+    & .post   
+      max-width: 370px 
+      & .img 
+        background: #717072
+        width: 370px
+        height: 255px
+        & .date 
+          background: #2b2a2c
+          width: 75px 
+          height: 75px 
+          & span 
+            color: #ffffff
+            font-size: 16px 
+            +bold 
+            display: block
+            text-align: center
+      & .desc
+        margin-top: 20px  
+        h4 
+          text-transform: uppercase
+          font-size: 18px 
+          +bold 
+          +black 
+          letter-spacing: 0.9px 
+          margin-bottom: 10px 
+        & span 
+          display: block
+          text-transform: uppercase
+          font-size: 12px 
+          +reg 
+          +black 
+          letter-spacing: 0.6px 
+          margin-bottom: 15px
+        & p 
+          font-size: 12px 
+          +reg 
+          +grey 
+          line-height: 24px 
+        & button 
+          text-transform: uppercase
+          display: flex
+          margin-top: 50px  
+          width: 130px 
+          height: 40px 
+          justify-content: center
+          align-items: center
+          font-size: 14px 
+          +bold 
+          +grey 
+          letter-spacing: 0.7px 
+          border: 2px solid 
+          border-radius: 20px 
+          transition: 0.2s 
+          &:hover
+            color: #ffffff
+            background: #2b2a2c
+  &-item
+    margin-top: 15px
+    & a 
+      display: flex
+      justify-content: flex-end
+      font-size: 14px 
+      +bold 
+      +grey  
+      letter-spacing: 0.7px 
+      text-decoration: underline
+
+
+
+
+

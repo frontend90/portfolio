@@ -783,4 +783,56 @@ h1, h2, h3, h4, h5, h6, p {
 .footer-wrap .menu button:hover {
   color: #ffffff;
 }
+
+@media screen and (max-width: 320px) {
+  .header-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .header-wrap .logo {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .header-wrap .menu {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .header-wrap .menu a {
+    margin-right: 5px;
+  }
+  .header-wrap .menu a:last-of-type {
+    margin-right: 0;
+  }
+  .header-wrap .menu button {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .header-title .desc {
+    text-align: center;
+    margin-top: 0;
+  }
+  .header-title .desc .btn {
+    margin-top: 10px;
+  }
+  .header-title .desc .btn button {
+    margin-left: 0;
+    margin-bottom: 10px;
+    height: 40px;
+  }
+  .header-title .header-img {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */

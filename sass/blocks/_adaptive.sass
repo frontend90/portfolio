@@ -32,6 +32,40 @@
             height: 40px 
       & .header-img 
         display: none  
+@media screen and ( max-width: 480px )
+  .header
+    &-wrap 
+      & .logo 
+        margin: 0 auto
+        margin-bottom: 20px 
+      & .menu 
+        display: block
+        text-align: center
+        margin: 0 auto
+        & a 
+          margin-right: 5px 
+          &:last-of-type
+            margin-right: 0
+        & button 
+          flex-wrap: wrap
+          display: flex
+          justify-content: center
+          align-items: center
+          margin: 0 auto
+          margin-top: 20px 
+    &-title
+      & .desc 
+        text-align: center
+        margin: 0 auto
+        margin-top: 50px
+        & .btn 
+          margin-top: 50px
+          & button 
+            margin-left: 20px
+            margin-bottom: 10px 
+      & .header-img 
+        display: none
+
 
          
   

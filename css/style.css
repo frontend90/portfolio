@@ -883,4 +883,73 @@ h1, h2, h3, h4, h5, h6, p {
     display: none;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .header-wrap .logo {
+    margin: 0 auto;
+  }
+  .header-wrap .menu {
+    margin: 0 auto;
+  }
+  .header-title .desc {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  .header-title .desc .btn {
+    margin-top: 50px;
+  }
+  .header-title .desc .btn button {
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+  .header-title .header-img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header-wrap .logo {
+    margin: 0 auto;
+  }
+  .header-wrap .menu {
+    margin: 0 auto;
+  }
+  .header-title .desc {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  .header-title .desc .btn {
+    margin-top: 50px;
+  }
+  .header-title .desc .btn button {
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+  .header-title .header-img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header-wrap .logo {
+    margin: 0 auto;
+  }
+  .header-wrap .menu {
+    margin: 0 auto;
+  }
+  .header-title .desc {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  .header-title .desc .btn {
+    margin-top: 50px;
+  }
+  .header-title .desc .btn button {
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

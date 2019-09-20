@@ -275,8 +275,6 @@ h1, h2, h3, h4, h5, h6, p {
 
 .portfolio-nav a:hover {
   color: #2b2a2c;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
 }
 
 .portfolio-nav a:first-of-type {
@@ -327,6 +325,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .portfolio-card {
+  height: 370px;
   max-width: 370px;
   border-radius: 5px;
   -webkit-box-shadow: 0 0px 10px #6a696b;
@@ -735,6 +734,12 @@ h1, h2, h3, h4, h5, h6, p {
   font-size: 20px;
   color: #6a696b;
   margin-left: 15px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.footer-wrap .social .fab:hover {
+  color: #ffffff;
 }
 
 .footer-wrap .menu a {
@@ -743,6 +748,12 @@ h1, h2, h3, h4, h5, h6, p {
   font-weight: 400;
   color: #6a696b;
   margin-right: 15px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.footer-wrap .menu a:hover {
+  color: #ffffff;
 }
 
 .footer-wrap .menu button {
@@ -765,5 +776,11 @@ h1, h2, h3, h4, h5, h6, p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.footer-wrap .menu button:hover {
+  color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */

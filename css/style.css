@@ -863,6 +863,17 @@ h1, h2, h3, h4, h5, h6, p {
   .about-wrap .about-me .about-btn button:last-of-type {
     margin-bottom: 0;
   }
+  .test {
+    max-height: 370px;
+  }
+  .test-content p {
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px;
+  }
+  .test-author {
+    margin-top: 60px;
+  }
 }
 
 @media (min-width: 321px) and (max-width: 480px) {
@@ -938,6 +949,17 @@ h1, h2, h3, h4, h5, h6, p {
   .about-wrap .about-me p {
     padding: 0 10px;
   }
+  .test {
+    max-height: 275px;
+  }
+  .test-content p {
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px;
+  }
+  .test-author {
+    margin-top: 60px;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
@@ -994,6 +1016,17 @@ h1, h2, h3, h4, h5, h6, p {
   .about-wrap .about-me {
     text-align: center;
     margin: 0 auto;
+  }
+  .test {
+    max-height: 210px;
+  }
+  .test-content p {
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px;
+  }
+  .test-author {
+    margin-top: 60px;
   }
 }
 

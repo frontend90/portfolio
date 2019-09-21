@@ -874,6 +874,26 @@ h1, h2, h3, h4, h5, h6, p {
   .test-author {
     margin-top: 60px;
   }
+  .read-title p {
+    font-size: 16px;
+  }
+  .read-posts {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .read-posts .post {
+    max-width: 100%;
+  }
+  .read-posts .post .desc {
+    text-align: center;
+    padding: 0 10px;
+  }
+  .read-posts .post .desc button {
+    margin: 10px auto 30px;
+  }
+  .read-item a {
+    margin-right: 20px;
+  }
 }
 
 @media (min-width: 321px) and (max-width: 480px) {
@@ -960,6 +980,29 @@ h1, h2, h3, h4, h5, h6, p {
   .test-author {
     margin-top: 60px;
   }
+  .read-title p {
+    font-size: 16px;
+  }
+  .read-posts {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .read-posts .post {
+    max-width: 100%;
+  }
+  .read-posts .post .img {
+    margin: 0 auto;
+  }
+  .read-posts .post .desc {
+    text-align: center;
+    padding: 0 10px;
+  }
+  .read-posts .post .desc button {
+    margin: 10px auto 30px;
+  }
+  .read-item a {
+    margin-right: 20px;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
@@ -1028,6 +1071,29 @@ h1, h2, h3, h4, h5, h6, p {
   .test-author {
     margin-top: 60px;
   }
+  .read-title p {
+    font-size: 16px;
+  }
+  .read-posts {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .read-posts .post {
+    max-width: 100%;
+  }
+  .read-posts .post .img {
+    margin: 0 auto;
+  }
+  .read-posts .post .desc {
+    text-align: center;
+    padding: 0 10px;
+  }
+  .read-posts .post .desc button {
+    margin: 10px auto 30px;
+  }
+  .read-item a {
+    margin-right: 20px;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
@@ -1084,6 +1150,26 @@ h1, h2, h3, h4, h5, h6, p {
   .about-wrap .about-me {
     text-align: center;
     margin: 0 auto;
+  }
+  .read-posts {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .read-posts .post {
+    max-width: 100%;
+  }
+  .read-posts .post .img {
+    margin: 0 auto;
+  }
+  .read-posts .post .desc {
+    text-align: center;
+    padding: 0 10px;
+  }
+  .read-posts .post .desc button {
+    margin: 10px auto 30px;
+  }
+  .read-item a {
+    margin-right: 20px;
   }
 }
 

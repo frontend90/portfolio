@@ -1,4 +1,4 @@
-@media screen and ( max-width: 320px )
+@media ( min-width: 0px ) and (max-width: 320px )
   .header
     &-wrap 
       flex-wrap: wrap
@@ -32,7 +32,17 @@
             height: 40px 
       & .header-img 
         display: none  
-@media screen and ( max-width: 480px )
+  .portfolio 
+    &-cards 
+      & .portfolio-card 
+        width: 100%
+        &:hover
+          transform: scale(1)
+        &:nth-child(7)
+          margin-bottom: 30px
+        &:nth-child(8)
+          margin-bottom: 30px
+@media ( min-width: 321px ) and ( max-width: 480px )
   .header
     &-wrap 
       & .logo 
@@ -65,7 +75,17 @@
             margin-bottom: 10px 
       & .header-img 
         display: none
-@media screen and ( max-width: 768px )
+  .portfolio 
+    &-cards 
+      justify-content: center
+      & .portfolio-card 
+        &:hover
+          transform: scale(1)
+        &:nth-child(7)
+          margin-bottom: 30px
+        &:nth-child(8)
+          margin-bottom: 30px
+@media ( min-width: 481px ) and ( max-width: 768px )
   .header
     &-wrap 
       & .logo 
@@ -84,7 +104,22 @@
             margin-bottom: 10px 
       & .header-img 
         display: none
-@media screen and ( max-width: 992px )
+  .portfolio 
+    &-cards 
+      justify-content: center 
+      margin-left: 30px 
+      & button 
+        flex-wrap: wrap
+        flex-basis: 50%
+      & .portfolio-card  
+        flex-wrap: wrap
+        &:hover
+          transform: scale(0.9)
+        &:nth-child(7)
+          margin-bottom: 30px
+        &:nth-child(8)
+          margin-bottom: 30px
+@media ( min-width: 769px ) and ( max-width: 992px )
   .header
     &-wrap 
       & .logo 
@@ -103,7 +138,23 @@
             margin-bottom: 10px 
       & .header-img 
         display: none
-@media screen and ( max-width: 1200px )
+  .portfolio 
+    &-cards 
+      margin: 30px 110px 
+      & button 
+        flex-wrap: wrap
+        flex-basis: 100%
+      & .portfolio-card  
+        flex-wrap: wrap
+        &:hover
+          transform: scale(0.9)
+        &:nth-child(7)
+          margin-bottom: 30px
+        &:nth-child(8)
+          margin-bottom: 30px
+        &:nth-child(9)
+          margin: 0 auto
+@media ( min-width: 993px ) and ( max-width: 1200px )
   .header
     &-wrap 
       & .logo 
@@ -120,6 +171,7 @@
           & button 
             margin-left: 20px
             margin-bottom: 10px 
+          
         
 
 

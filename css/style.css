@@ -847,6 +847,22 @@ h1, h2, h3, h4, h5, h6, p {
   .portfolio-cards .portfolio-card:nth-child(8) {
     margin-bottom: 30px;
   }
+  .about-wrap .about-img {
+    display: none;
+  }
+  .about-wrap .about-me {
+    text-align: center;
+  }
+  .about-wrap .about-me p {
+    padding: 0 5px;
+  }
+  .about-wrap .about-me .about-btn button {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .about-wrap .about-me .about-btn button:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: 321px) and (max-width: 480px) {
@@ -910,6 +926,18 @@ h1, h2, h3, h4, h5, h6, p {
   .portfolio-cards .portfolio-card:nth-child(8) {
     margin-bottom: 30px;
   }
+  .about-wrap .about-img {
+    display: none;
+  }
+  .about-wrap .about-me {
+    text-align: center;
+  }
+  .about-wrap .about-me h3 {
+    font-size: 80px;
+  }
+  .about-wrap .about-me p {
+    padding: 0 10px;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
@@ -960,6 +988,13 @@ h1, h2, h3, h4, h5, h6, p {
   .portfolio-cards .portfolio-card:nth-child(8) {
     margin-bottom: 30px;
   }
+  .about-wrap .about-img {
+    display: none;
+  }
+  .about-wrap .about-me {
+    text-align: center;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
@@ -1008,6 +1043,13 @@ h1, h2, h3, h4, h5, h6, p {
     margin-bottom: 30px;
   }
   .portfolio-cards .portfolio-card:nth-child(9) {
+    margin: 0 auto;
+  }
+  .about-wrap .about-img {
+    display: none;
+  }
+  .about-wrap .about-me {
+    text-align: center;
     margin: 0 auto;
   }
 }

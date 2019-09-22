@@ -28,3 +28,4 @@ $('.close').click(function () {
   $('.resume').removeClass('show');
   $('body').removeClass('no-scroll');
 });
+;

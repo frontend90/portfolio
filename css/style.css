@@ -2,6 +2,10 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
 @font-face {
   font-family: 'fa-brands-400';
   src: url("../fonts/fa-brands-400.ttf");
@@ -1287,5 +1291,554 @@ h1, h2, h3, h4, h5, h6, p {
   .footer-wrap .menu button {
     margin-top: 20px;
   }
+}
+
+.project {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.7);
+  -webkit-transition: -webkit-transform 0.9s linear;
+  transition: -webkit-transform 0.9s linear;
+  transition: transform 0.9s linear;
+  transition: transform 0.9s linear, -webkit-transform 0.9s linear;
+  -webkit-transform: translate3d(1800px, 1800px, 100px);
+          transform: translate3d(1800px, 1800px, 100px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.project.show {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.project-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  width: 1200px;
+  height: 775px;
+  position: relative;
+}
+
+.project-wrap .close {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #000000;
+  top: 15px;
+  right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.project-wrap .close:hover {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.project-wrap .close span:first-of-type {
+  position: absolute;
+  width: 20px;
+  height: 5px;
+  background: #ffffff;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.project-wrap .close span:last-of-type {
+  width: 20px;
+  height: 5px;
+  background: #ffffff;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.project-wrap .left {
+  overflow: hidden;
+  width: 65%;
+  position: relative;
+}
+
+.project-wrap .left img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+}
+
+.project-wrap .right {
+  width: 35%;
+  padding-top: 50px;
+  padding-left: 25px;
+  padding-right: 90px;
+  background: #ffffff;
+  overflow: auto;
+}
+
+.project-wrap .right .title {
+  margin-bottom: 25px;
+}
+
+.project-wrap .right .title h3 {
+  text-transform: uppercase;
+  color: #2b2a2c;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.project-wrap .right .title span {
+  text-transform: uppercase;
+  color: #6a696b;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.project-wrap .right .client {
+  margin-bottom: 30px;
+}
+
+.project-wrap .right .client p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #2b2a2c;
+}
+
+.project-wrap .right .client p span {
+  color: #6a696b;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.project-wrap .right .desc p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #6a696b;
+  line-height: 24px;
+}
+
+.resume {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.7);
+  -webkit-transition: -webkit-transform 0.9s linear;
+  transition: -webkit-transform 0.9s linear;
+  transition: transform 0.9s linear;
+  transition: transform 0.9s linear, -webkit-transform 0.9s linear;
+  -webkit-transform: translate3d(1800px, -1800px, 100px);
+          transform: translate3d(1800px, -1800px, 100px);
+}
+
+.resume.show {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.resume-wrap {
+  width: 1200px;
+  height: 100vh;
+  background: #ffffff;
+  margin: auto;
+  overflow: auto;
+  position: relative;
+}
+
+.resume-wrap .close {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #000000;
+  top: 15px;
+  right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.resume-wrap .close:hover {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.resume-wrap .close span:first-of-type {
+  position: absolute;
+  width: 20px;
+  height: 5px;
+  background: #ffffff;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.resume-wrap .close span:last-of-type {
+  width: 20px;
+  height: 5px;
+  background: #ffffff;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.resume-wrap .resume-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  margin-top: 65px;
+  margin-bottom: 65px;
+  width: 170px;
+  height: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  background: #2b2a2c;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  border-radius: 25px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.resume-wrap .resume-footer:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.resume-wrap .resume-title {
+  padding-top: 75px;
+}
+
+.resume-wrap .resume-title h3 {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+  color: #2b2a2c;
+}
+
+.resume-wrap .resume-title .resume-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 65px;
+}
+
+.resume-wrap .resume-title .resume-btn button {
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #6a696b;
+  letter-spacing: 0.6px;
+  border: 1px solid;
+  border-radius: 20px;
+  width: 145px;
+  height: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 15px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.resume-wrap .resume-title .resume-btn button:first-of-type {
+  margin-left: 0;
+}
+
+.resume-wrap .resume-title .resume-btn button:hover {
+  background: #000000;
+  color: #ffffff;
+}
+
+.resume-wrap .resume-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 65px;
+}
+
+.resume-wrap .resume-box .left {
+  width: 39%;
+  text-align: right;
+  border-right: 1px solid;
+  padding-right: 50px;
+}
+
+.resume-wrap .resume-box .left h4 {
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #2b2a2c;
+  letter-spacing: 0.9px;
+  margin-bottom: 25px;
+}
+
+.resume-wrap .resume-box .left .content {
+  margin-bottom: 40px;
+}
+
+.resume-wrap .resume-box .left .content:last-of-type {
+  margin-bottom: 0;
+}
+
+.resume-wrap .resume-box .left .content .active {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #2b2a2c;
+  text-decoration: underline;
+  margin-bottom: 15px;
+}
+
+.resume-wrap .resume-box .left .content .date {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #2b2a2c;
+  text-decoration: underline;
+  margin-bottom: 15px;
+}
+
+.resume-wrap .resume-box .left .content .company {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #2b2a2c;
+  display: block;
+}
+
+.resume-wrap .resume-box .left .content .prof {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #2b2a2c;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.resume-wrap .resume-box .left .content .text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.resume-wrap .resume-box .right {
+  width: 39%;
+  padding-left: 50px;
+}
+
+.resume-wrap .resume-box .right .education {
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #2b2a2c;
+  letter-spacing: 0.9px;
+  margin-bottom: 25px;
+}
+
+.resume-wrap .resume-box .right .content {
+  margin-bottom: 40px;
+}
+
+.resume-wrap .resume-box .right .content .date {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #2b2a2c;
+  text-decoration: underline;
+  margin-bottom: 15px;
+}
+
+.resume-wrap .resume-box .right .content .prof {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #2b2a2c;
+}
+
+.resume-wrap .resume-box .right .content .study {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #2b2a2c;
+}
+
+.resume-wrap .resume-box .right .skills h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #2b2a2c;
+  letter-spacing: 0.9px;
+  margin-bottom: 20px;
+}
+
+.resume-wrap .resume-box .right .skills .content {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 270px;
+  height: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.resume-wrap .resume-box .right .skills .content .prof {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #2b2a2c;
+}
+
+.resume-wrap .resume-box .right .skills .content .preload {
+  width: 155px;
+  height: 5px;
+  background: #efefef;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.resume-wrap .resume-box .right .skills .content .preload::before {
+  content: '';
+  width: 114px;
+  height: 5px;
+  background: #6a696b;
+}
+
+.resume-wrap .resume-box .right .skills .design .preload::before {
+  width: 128px;
+}
+
+.resume-wrap .resume-box .right .skills .illustrator .preload::before {
+  width: 137px;
+}
+
+.resume-wrap .resume-box .right .skills .photoshop .preload::before {
+  width: 130px;
+}
+
+.resume-wrap .resume-box .right .awards {
+  margin-top: 49px;
+}
+
+.resume-wrap .resume-box .right .awards h4 {
+  margin-bottom: 33px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #2b2a2c;
+  letter-spacing: 0.9px;
+}
+
+.resume-wrap .resume-box .right .awards .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 37px;
+}
+
+.resume-wrap .resume-box .right .awards .content:last-of-type {
+  margin-bottom: 0;
+}
+
+.resume-wrap .resume-box .right .awards .content span {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration: underline;
+  color: #2b2a2c;
+  display: block;
+  margin-right: 15px;
+}
+
+.resume-wrap .resume-box .right .awards .content .desc h5 {
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #2b2a2c;
+}
+
+.resume-wrap .resume-box .right .awards .content .desc span {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #2b2a2c;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.resume-wrap .resume-box .right .awards .content .desc p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #6a696b;
+  line-height: 18px;
 }
 /*# sourceMappingURL=style.css.map */

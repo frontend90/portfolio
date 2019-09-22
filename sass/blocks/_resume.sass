@@ -1,0 +1,252 @@
+.resume 
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 1
+  background: rgba(000, 000, 000, 0.7)
+  transition: transform 0.9s linear 
+  transform: translate3d(1800px,-1800px,100px)
+  &.show 
+    transform: translate3d(0,0,0)
+  &-wrap
+    width: 1200px 
+    height: 100vh
+    background: #ffffff
+    margin: auto
+    overflow: auto
+    position: relative
+    & .close 
+      position: absolute
+      width: 35px 
+      height: 35px 
+      border-radius: 50%
+      background: #000000
+      top: 15px 
+      right: 15px
+      display: flex
+      justify-content: center
+      align-items: center
+      cursor: pointer
+      transition: 0.2s
+      &:hover
+        transform: rotate(90deg)
+      & span:first-of-type 
+        position: absolute
+        width: 20px 
+        height: 5px
+        background: #ffffff
+        transform: rotate(45deg)
+      & span:last-of-type
+        width: 20px 
+        height: 5px
+        background: #ffffff
+        transform: rotate(-45deg)
+    & .resume-footer 
+      display: flex
+      margin: auto
+      margin-top: 65px 
+      margin-bottom: 65px 
+      width: 170px 
+      height: 50px 
+      justify-content: center
+      align-items: center
+      text-transform: uppercase
+      background: #2b2a2c
+      color: #ffffff
+      +reg 
+      font-size: 16px 
+      letter-spacing: 0.8px 
+      border-radius: 25px 
+      transition: 0.2s
+      &:hover
+        transform: scale(0.9)
+    & .resume-title 
+      padding-top: 75px 
+      & h3 
+        text-transform: uppercase
+        text-align: center
+        +bold 
+        font-size: 45px 
+        +black 
+      & .resume-btn 
+        display: flex
+        justify-content: center
+        margin-top: 65px
+        & button 
+          text-transform: uppercase
+          +reg 
+          font-size: 12px 
+          +grey
+          letter-spacing: 0.6px 
+          border: 1px solid
+          border-radius: 20px 
+          width: 145px 
+          height: 40px 
+          justify-content: center
+          align-items: center
+          margin-left: 15px 
+          transition: 0.2s
+          &:first-of-type
+            margin-left: 0
+          &:hover
+            background: #000000
+            color: #ffffff
+    & .resume-box 
+      display: flex
+      justify-content: center
+      margin-top: 65px 
+      & .left 
+        width: 39%
+        text-align: right
+        border-right: 1px solid 
+        padding-right: 50px 
+        & h4 
+          text-transform: uppercase
+          +bold 
+          font-size: 18px 
+          +black 
+          letter-spacing: 0.9px
+          margin-bottom: 25px 
+        & .content 
+          margin-bottom: 40px 
+          &:last-of-type
+            margin-bottom: 0
+          & .active 
+            +bold 
+            font-size: 14px 
+            +black 
+            text-decoration: underline
+            margin-bottom: 15px 
+          & .date 
+            +reg 
+            font-size: 14px 
+            +black 
+            text-decoration: underline
+            margin-bottom: 15px 
+          & .company 
+            +bold 
+            font-size: 16px 
+            +black 
+            display: block
+          & .prof 
+            +reg 
+            font-size: 14px 
+            +black
+            display: block
+            margin-bottom: 15px 
+          & .text 
+            +reg 
+            font-size: 12px 
+            line-height: 18px 
+      & .right 
+        width: 39%
+        padding-left: 50px 
+        & .education
+          text-transform: uppercase
+          +bold 
+          font-size: 18px 
+          +black 
+          letter-spacing: 0.9px 
+          margin-bottom: 25px 
+        & .content 
+          margin-bottom: 40px 
+          & .date 
+            +reg 
+            font-size: 14px 
+            +black 
+            text-decoration: underline
+            margin-bottom: 15px 
+          & .prof 
+            display: block
+            +bold 
+            font-size: 16px 
+            +black
+          & .study 
+            display: block
+            +reg 
+            font-size: 14px 
+            +black
+        & .skills 
+          & h4 
+            +bold 
+            font-size: 18px 
+            text-transform: uppercase
+            +black 
+            letter-spacing: 0.9px 
+            margin-bottom: 20px 
+          & .content 
+            margin: 0
+            display: flex
+            width: 270px
+            height: 20px
+            justify-content: space-between
+            align-items: center
+            & .prof 
+              +reg 
+              font-size: 14px 
+              +black
+            & .preload 
+              width: 155px 
+              height: 5px
+              background: #efefef
+              display: flex
+              &::before
+                content: ''
+                width: 114px 
+                height: 5px 
+                background: #6a696b
+          & .design 
+            & .preload
+              &::before
+                width: 128px 
+          & .illustrator 
+            & .preload
+              &::before
+                width: 137px
+          & .photoshop 
+            & .preload
+              &::before
+                width: 130px 
+        & .awards 
+          margin-top: 49px
+          & h4  
+            margin-bottom: 33px 
+            text-transform: uppercase
+            +bold 
+            font-size: 18px 
+            +black 
+            letter-spacing: 0.9px 
+          & .content 
+            display: flex
+            margin-bottom: 37px
+            &:last-of-type
+              margin-bottom: 0
+            & span 
+              +reg 
+              font-size: 14px 
+              text-decoration: underline
+              +black 
+              display: block
+              margin-right: 15px 
+            & .desc 
+              & h5 
+                text-transform: uppercase
+                +bold 
+                font-size: 16px 
+                +black 
+              & span 
+                text-decoration: none
+                +reg 
+                font-size: 14px 
+                +black 
+                display: block
+                margin-bottom: 15px 
+              & p 
+                +reg 
+                font-size: 12px 
+                +grey 
+                line-height: 18px 
+
+                

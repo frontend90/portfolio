@@ -1454,6 +1454,9 @@ h1, h2, h3, h4, h5, h6, p {
   transition: transform 0.9s linear, -webkit-transform 0.9s linear;
   -webkit-transform: translate3d(1800px, -1800px, 100px);
           transform: translate3d(1800px, -1800px, 100px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .resume.show {
@@ -1854,9 +1857,16 @@ h1, h2, h3, h4, h5, h6, p {
   transition: -webkit-transform 0.9s linear;
   transition: transform 0.9s linear;
   transition: transform 0.9s linear, -webkit-transform 0.9s linear;
+  -webkit-transform: translate3d(1800px, 1800px, 100px);
+          transform: translate3d(1800px, 1800px, 100px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.hire.show {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
 
 .hire-wrap {

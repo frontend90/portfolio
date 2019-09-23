@@ -10,22 +10,23 @@ $(function () {
     $('.portfolio-card').show(500);
   });
 });
-/*------------ modal project  --------------------*/
-$('.portfolio-card').click(function () {
-  $('.project').toggleClass('show');
-  $('body').toggleClass('no-scroll');
+/*-------------     modal windows   -------------*/
+$('[data-modal]').click(function () {
+  event.preventDefault();
+
+  let $this = $(this);
+  let modalId = $this.data('modal');
+
+  $(modalId).addClass('show');
+  $('body').addClass('no-scroll');
 });
+
 $('.close').click(function () {
-  $('.project').removeClass('show');
+  event.preventDefault();
+
+  let $this = $(this);
+  let modalParent = $this.parents('.modal');
+
+  modalParent.removeClass('show');
   $('body').removeClass('no-scroll');
 });
-/*------------ modal resume  --------------------*/
-$('#resume').click(function () {
-  $('.resume').toggleClass('show');
-  $('body').toggleClass('no-scroll');
-});
-$('.close').click(function () {
-  $('.resume').removeClass('show');
-  $('body').removeClass('no-scroll');
-});
-;

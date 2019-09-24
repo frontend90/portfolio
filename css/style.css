@@ -788,511 +788,6 @@ h1, h2, h3, h4, h5, h6, p {
   color: #ffffff;
 }
 
-@media (min-width: 0px) and (max-width: 320px) {
-  .header-wrap {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .header-wrap .logo {
-    margin: 0 auto;
-    margin-bottom: 20px;
-  }
-  .header-wrap .menu {
-    display: block;
-    text-align: center;
-    margin: 0 auto;
-  }
-  .header-wrap .menu a {
-    margin-right: 5px;
-  }
-  .header-wrap .menu a:last-of-type {
-    margin-right: 0;
-  }
-  .header-wrap .menu button {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 0 auto;
-    margin-top: 20px;
-  }
-  .header-title .desc {
-    text-align: center;
-    margin-top: 0;
-  }
-  .header-title .desc .btn {
-    margin-top: 10px;
-  }
-  .header-title .desc .btn button {
-    margin-left: 0;
-    margin-bottom: 10px;
-    height: 40px;
-  }
-  .header-title .header-img {
-    display: none;
-  }
-  .portfolio-cards .portfolio-card {
-    width: 100%;
-  }
-  .portfolio-cards .portfolio-card:hover {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  .portfolio-cards .portfolio-card:nth-child(7) {
-    margin-bottom: 30px;
-  }
-  .portfolio-cards .portfolio-card:nth-child(8) {
-    margin-bottom: 30px;
-  }
-  .about-wrap .about-img {
-    display: none;
-  }
-  .about-wrap .about-me {
-    text-align: center;
-  }
-  .about-wrap .about-me p {
-    padding: 0 5px;
-  }
-  .about-wrap .about-me .about-btn button {
-    margin-left: 0;
-    margin-bottom: 20px;
-  }
-  .about-wrap .about-me .about-btn button:last-of-type {
-    margin-bottom: 0;
-  }
-  .test {
-    max-height: 370px;
-  }
-  .test-content p {
-    width: 100%;
-    height: 100%;
-    padding: 10px 10px;
-  }
-  .test-author {
-    margin-top: 60px;
-  }
-  .read-title p {
-    font-size: 16px;
-  }
-  .read-posts {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .read-posts .post {
-    max-width: 100%;
-  }
-  .read-posts .post .desc {
-    text-align: center;
-    padding: 0 10px;
-  }
-  .read-posts .post .desc button {
-    margin: 10px auto 30px;
-  }
-  .read-item a {
-    margin-right: 20px;
-  }
-  .footer-wrap {
-    height: 230px;
-    display: block;
-    padding-top: 20px;
-  }
-  .footer-wrap .social {
-    display: block;
-    text-align: center;
-  }
-  .footer-wrap .social p {
-    padding-bottom: 10px;
-  }
-  .footer-wrap .menu {
-    text-align: center;
-    margin-top: 20px;
-  }
-  .footer-wrap .menu button {
-    margin-top: 20px;
-  }
-}
-
-@media (min-width: 321px) and (max-width: 480px) {
-  .header-wrap .logo {
-    margin: 0 auto;
-    margin-bottom: 20px;
-  }
-  .header-wrap .menu {
-    display: block;
-    text-align: center;
-    margin: 0 auto;
-  }
-  .header-wrap .menu a {
-    margin-right: 5px;
-  }
-  .header-wrap .menu a:last-of-type {
-    margin-right: 0;
-  }
-  .header-wrap .menu button {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 0 auto;
-    margin-top: 20px;
-  }
-  .header-title .desc {
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 50px;
-  }
-  .header-title .desc .btn {
-    margin-top: 50px;
-  }
-  .header-title .desc .btn button {
-    margin-left: 20px;
-    margin-bottom: 10px;
-  }
-  .header-title .header-img {
-    display: none;
-  }
-  .portfolio-cards {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .portfolio-cards .portfolio-card:hover {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  .portfolio-cards .portfolio-card:nth-child(7) {
-    margin-bottom: 30px;
-  }
-  .portfolio-cards .portfolio-card:nth-child(8) {
-    margin-bottom: 30px;
-  }
-  .about-wrap .about-img {
-    display: none;
-  }
-  .about-wrap .about-me {
-    text-align: center;
-  }
-  .about-wrap .about-me h3 {
-    font-size: 80px;
-  }
-  .about-wrap .about-me p {
-    padding: 0 10px;
-  }
-  .test {
-    max-height: 275px;
-  }
-  .test-content p {
-    width: 100%;
-    height: 100%;
-    padding: 10px 10px;
-  }
-  .test-author {
-    margin-top: 60px;
-  }
-  .read-title p {
-    font-size: 16px;
-  }
-  .read-posts {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .read-posts .post {
-    max-width: 100%;
-  }
-  .read-posts .post .img {
-    margin: 0 auto;
-  }
-  .read-posts .post .desc {
-    text-align: center;
-    padding: 0 10px;
-  }
-  .read-posts .post .desc button {
-    margin: 10px auto 30px;
-  }
-  .read-item a {
-    margin-right: 20px;
-  }
-  .footer-wrap {
-    height: 200px;
-    display: block;
-    padding-top: 20px;
-  }
-  .footer-wrap .social {
-    display: block;
-    text-align: center;
-  }
-  .footer-wrap .social p {
-    padding-bottom: 10px;
-  }
-  .footer-wrap .menu {
-    text-align: center;
-    margin-top: 20px;
-  }
-  .footer-wrap .menu button {
-    margin-top: 20px;
-  }
-}
-
-@media (min-width: 481px) and (max-width: 768px) {
-  .header-wrap .logo {
-    margin: 0 auto;
-  }
-  .header-wrap .menu {
-    margin: 0 auto;
-  }
-  .header-title .desc {
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 50px;
-  }
-  .header-title .desc .btn {
-    margin-top: 50px;
-  }
-  .header-title .desc .btn button {
-    margin-left: 20px;
-    margin-bottom: 10px;
-  }
-  .header-title .header-img {
-    display: none;
-  }
-  .portfolio-cards {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-left: 30px;
-  }
-  .portfolio-cards button {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
-  }
-  .portfolio-cards .portfolio-card {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .portfolio-cards .portfolio-card:hover {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-  }
-  .portfolio-cards .portfolio-card:nth-child(7) {
-    margin-bottom: 30px;
-  }
-  .portfolio-cards .portfolio-card:nth-child(8) {
-    margin-bottom: 30px;
-  }
-  .about-wrap .about-img {
-    display: none;
-  }
-  .about-wrap .about-me {
-    text-align: center;
-    margin: 0 auto;
-  }
-  .test {
-    max-height: 210px;
-  }
-  .test-content p {
-    width: 100%;
-    height: 100%;
-    padding: 10px 10px;
-  }
-  .test-author {
-    margin-top: 60px;
-  }
-  .read-title p {
-    font-size: 16px;
-  }
-  .read-posts {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .read-posts .post {
-    max-width: 100%;
-  }
-  .read-posts .post .img {
-    margin: 0 auto;
-  }
-  .read-posts .post .desc {
-    text-align: center;
-    padding: 0 10px;
-  }
-  .read-posts .post .desc button {
-    margin: 10px auto 30px;
-  }
-  .read-item a {
-    margin-right: 20px;
-  }
-  .footer-wrap {
-    height: 190px;
-    display: block;
-    padding-top: 20px;
-  }
-  .footer-wrap .social {
-    display: block;
-    text-align: center;
-  }
-  .footer-wrap .social p {
-    padding-bottom: 10px;
-  }
-  .footer-wrap .menu {
-    text-align: center;
-    margin-top: 20px;
-  }
-  .footer-wrap .menu button {
-    margin-top: 20px;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 992px) {
-  .header-wrap .logo {
-    margin: 0 auto;
-  }
-  .header-wrap .menu {
-    margin: 0 auto;
-  }
-  .header-title .desc {
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 50px;
-  }
-  .header-title .desc .btn {
-    margin-top: 50px;
-  }
-  .header-title .desc .btn button {
-    margin-left: 20px;
-    margin-bottom: 10px;
-  }
-  .header-title .header-img {
-    display: none;
-  }
-  .portfolio-cards {
-    margin: 30px 110px;
-  }
-  .portfolio-cards button {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-  }
-  .portfolio-cards .portfolio-card {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .portfolio-cards .portfolio-card:hover {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-  }
-  .portfolio-cards .portfolio-card:nth-child(7) {
-    margin-bottom: 30px;
-  }
-  .portfolio-cards .portfolio-card:nth-child(8) {
-    margin-bottom: 30px;
-  }
-  .portfolio-cards .portfolio-card:nth-child(9) {
-    margin: 0 auto;
-  }
-  .about-wrap .about-img {
-    display: none;
-  }
-  .about-wrap .about-me {
-    text-align: center;
-    margin: 0 auto;
-  }
-  .read-posts {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .read-posts .post {
-    max-width: 100%;
-  }
-  .read-posts .post .img {
-    margin: 0 auto;
-  }
-  .read-posts .post .desc {
-    text-align: center;
-    padding: 0 10px;
-  }
-  .read-posts .post .desc button {
-    margin: 10px auto 30px;
-  }
-  .read-item a {
-    margin-right: 20px;
-  }
-  .footer-wrap {
-    height: 190px;
-    display: block;
-    padding-top: 20px;
-  }
-  .footer-wrap .social {
-    display: block;
-    text-align: center;
-  }
-  .footer-wrap .social p {
-    padding-bottom: 10px;
-  }
-  .footer-wrap .menu {
-    text-align: center;
-    margin-top: 20px;
-  }
-  .footer-wrap .menu button {
-    margin-top: 20px;
-  }
-}
-
-@media (min-width: 993px) and (max-width: 1200px) {
-  .header-wrap .logo {
-    margin: 0 auto;
-  }
-  .header-wrap .menu {
-    margin: 0 auto;
-  }
-  .header-title .desc {
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 50px;
-  }
-  .header-title .desc .btn {
-    margin-top: 50px;
-  }
-  .header-title .desc .btn button {
-    margin-left: 20px;
-    margin-bottom: 10px;
-  }
-  .footer-wrap {
-    height: 190px;
-    display: block;
-    padding-top: 20px;
-  }
-  .footer-wrap .social {
-    display: block;
-    text-align: center;
-  }
-  .footer-wrap .social p {
-    padding-bottom: 10px;
-  }
-  .footer-wrap .menu {
-    text-align: center;
-    margin-top: 20px;
-  }
-  .footer-wrap .menu button {
-    margin-top: 20px;
-  }
-}
-
 .project {
   width: 100%;
   height: 100%;
@@ -1452,8 +947,7 @@ h1, h2, h3, h4, h5, h6, p {
   transition: -webkit-transform 0.9s linear;
   transition: transform 0.9s linear;
   transition: transform 0.9s linear, -webkit-transform 0.9s linear;
-  -webkit-transform: translate3d(1800px, -1800px, 100px);
-          transform: translate3d(1800px, -1800px, 100px);
+  /*transform: translate3d(1800px,-1800px,100px)*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1614,10 +1108,11 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .resume-wrap .resume-box .left {
-  width: 39%;
+  width: 50%;
   text-align: right;
   border-right: 1px solid;
   padding-right: 50px;
+  padding-left: 50px;
 }
 
 .resume-wrap .resume-box .left h4 {
@@ -1681,8 +1176,9 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .resume-wrap .resume-box .right {
-  width: 39%;
+  width: 50%;
   padding-left: 50px;
+  padding-right: 50px;
 }
 
 .resume-wrap .resume-box .right .education {
@@ -1857,8 +1353,8 @@ h1, h2, h3, h4, h5, h6, p {
   transition: -webkit-transform 0.9s linear;
   transition: transform 0.9s linear;
   transition: transform 0.9s linear, -webkit-transform 0.9s linear;
-  -webkit-transform: translate3d(1800px, 1800px, 100px);
-          transform: translate3d(1800px, 1800px, 100px);
+  -webkit-transform: translate3d(-1800px, -1800px, -900px);
+          transform: translate3d(-1800px, -1800px, -900px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2049,5 +1545,769 @@ h1, h2, h3, h4, h5, h6, p {
 .hire-wrap .left .btn button:hover {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
+}
+
+@media (min-width: 0px) and (max-width: 320px) {
+  .header-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .header-wrap .logo {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .header-wrap .menu {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .header-wrap .menu a {
+    margin-right: 5px;
+  }
+  .header-wrap .menu a:last-of-type {
+    margin-right: 0;
+  }
+  .header-wrap .menu button {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .header-title .desc {
+    text-align: center;
+    margin-top: 0;
+  }
+  .header-title .desc .btn {
+    margin-top: 10px;
+  }
+  .header-title .desc .btn button {
+    margin-left: 0;
+    margin-bottom: 10px;
+    height: 40px;
+  }
+  .header-title .header-img {
+    display: none;
+  }
+  .portfolio-cards .portfolio-card {
+    width: 100%;
+  }
+  .portfolio-cards .portfolio-card:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .portfolio-cards .portfolio-card:nth-child(7) {
+    margin-bottom: 30px;
+  }
+  .portfolio-cards .portfolio-card:nth-child(8) {
+    margin-bottom: 30px;
+  }
+  .about-wrap .about-img {
+    display: none;
+  }
+  .about-wrap .about-me {
+    text-align: center;
+  }
+  .about-wrap .about-me p {
+    padding: 0 5px;
+  }
+  .about-wrap .about-me .about-btn button {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .about-wrap .about-me .about-btn button:last-of-type {
+    margin-bottom: 0;
+  }
+  .test {
+    max-height: 370px;
+  }
+  .test-content p {
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px;
+  }
+  .test-author {
+    margin-top: 60px;
+  }
+  .read-title p {
+    font-size: 16px;
+  }
+  .read-posts {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .read-posts .post {
+    max-width: 100%;
+  }
+  .read-posts .post .desc {
+    text-align: center;
+    padding: 0 10px;
+  }
+  .read-posts .post .desc button {
+    margin: 10px auto 30px;
+  }
+  .read-item a {
+    margin-right: 20px;
+  }
+  .footer-wrap {
+    height: 230px;
+    display: block;
+    padding-top: 20px;
+  }
+  .footer-wrap .social {
+    display: block;
+    text-align: center;
+  }
+  .footer-wrap .social p {
+    padding-bottom: 10px;
+  }
+  .footer-wrap .menu {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .footer-wrap .menu button {
+    margin-top: 20px;
+  }
+  .hire-wrap {
+    height: 100vh;
+    overflow: hidden;
+  }
+  .hire-wrap .left {
+    width: 100%;
+    padding-left: 0;
+  }
+  .hire-wrap .left .title {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .hire-wrap .left .connect {
+    padding-left: 30px;
+  }
+  .hire-wrap .left .form label {
+    padding-left: 10px;
+  }
+  .hire-wrap .left .form input[type="text"] {
+    max-width: 100%;
+  }
+  .hire-wrap .left .btn {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 0;
+  }
+  .hire-wrap .right {
+    display: none;
+  }
+  .project-wrap {
+    height: 100vh;
+  }
+  .project-wrap .left {
+    display: none;
+  }
+  .project-wrap .right {
+    width: 100%;
+    padding: 0;
+    padding-top: 50px;
+  }
+  .project-wrap .right .title {
+    text-align: center;
+  }
+  .project-wrap .right .client {
+    margin-left: 10px;
+  }
+  .project-wrap .right .desc {
+    padding: 0 10px;
+    margin-bottom: 50px;
+  }
+  .resume-wrap .resume-box {
+    display: block;
+  }
+  .resume-wrap .resume-box .left {
+    margin-bottom: 50px;
+    min-width: 100%;
+    text-align: center;
+    border: none;
+    padding: 0 5px;
+  }
+  .resume-wrap .resume-box .right {
+    min-width: 100%;
+    padding: 0 5px;
+    text-align: center;
+  }
+  .resume-wrap .resume-box .right .skills .content {
+    margin: auto;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+  .header-wrap .logo {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .header-wrap .menu {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .header-wrap .menu a {
+    margin-right: 5px;
+  }
+  .header-wrap .menu a:last-of-type {
+    margin-right: 0;
+  }
+  .header-wrap .menu button {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .header-title .desc {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  .header-title .desc .btn {
+    margin-top: 50px;
+  }
+  .header-title .desc .btn button {
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+  .header-title .header-img {
+    display: none;
+  }
+  .portfolio-cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .portfolio-cards .portfolio-card:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .portfolio-cards .portfolio-card:nth-child(7) {
+    margin-bottom: 30px;
+  }
+  .portfolio-cards .portfolio-card:nth-child(8) {
+    margin-bottom: 30px;
+  }
+  .about-wrap .about-img {
+    display: none;
+  }
+  .about-wrap .about-me {
+    text-align: center;
+  }
+  .about-wrap .about-me h3 {
+    font-size: 80px;
+  }
+  .about-wrap .about-me p {
+    padding: 0 10px;
+  }
+  .test {
+    max-height: 275px;
+  }
+  .test-content p {
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px;
+  }
+  .test-author {
+    margin-top: 60px;
+  }
+  .read-title p {
+    font-size: 16px;
+  }
+  .read-posts {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .read-posts .post {
+    max-width: 100%;
+  }
+  .read-posts .post .img {
+    margin: 0 auto;
+  }
+  .read-posts .post .desc {
+    text-align: center;
+    padding: 0 10px;
+  }
+  .read-posts .post .desc button {
+    margin: 10px auto 30px;
+  }
+  .read-item a {
+    margin-right: 20px;
+  }
+  .footer-wrap {
+    height: 200px;
+    display: block;
+    padding-top: 20px;
+  }
+  .footer-wrap .social {
+    display: block;
+    text-align: center;
+  }
+  .footer-wrap .social p {
+    padding-bottom: 10px;
+  }
+  .footer-wrap .menu {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .footer-wrap .menu button {
+    margin-top: 20px;
+  }
+  .hire-wrap {
+    height: 100vh;
+    overflow: hidden;
+  }
+  .hire-wrap .left {
+    width: 100%;
+    padding-left: 0;
+  }
+  .hire-wrap .left .title {
+    margin-top: 200px;
+    text-align: center;
+  }
+  .hire-wrap .left .connect {
+    padding-left: 95px;
+  }
+  .hire-wrap .left .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .hire-wrap .left .btn {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 0;
+    margin-top: 50px;
+  }
+  .hire-wrap .right {
+    display: none;
+  }
+  .project-wrap {
+    height: 100vh;
+  }
+  .project-wrap .left {
+    display: none;
+  }
+  .project-wrap .right {
+    width: 100%;
+    padding: 0;
+    padding-top: 150px;
+  }
+  .project-wrap .right .title {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  .project-wrap .right .client {
+    margin-left: 10px;
+    margin-bottom: 50px;
+  }
+  .project-wrap .right .desc {
+    padding: 0 10px;
+    margin-bottom: 50px;
+  }
+  .resume-wrap .resume-box {
+    display: block;
+  }
+  .resume-wrap .resume-box .left {
+    margin-bottom: 50px;
+    min-width: 100%;
+    text-align: center;
+    border: none;
+    padding: 0 5px;
+  }
+  .resume-wrap .resume-box .right {
+    min-width: 100%;
+    padding: 0 5px;
+    text-align: center;
+  }
+  .resume-wrap .resume-box .right .skills .content {
+    margin: auto;
+  }
+  .resume-wrap .resume-box .right .awards .content span {
+    padding-left: 30px;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .header-wrap .logo {
+    margin: 0 auto;
+  }
+  .header-wrap .menu {
+    margin: 0 auto;
+  }
+  .header-title .desc {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  .header-title .desc .btn {
+    margin-top: 50px;
+  }
+  .header-title .desc .btn button {
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+  .header-title .header-img {
+    display: none;
+  }
+  .portfolio-cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 30px;
+  }
+  .portfolio-cards button {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  .portfolio-cards .portfolio-card {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .portfolio-cards .portfolio-card:hover {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  .portfolio-cards .portfolio-card:nth-child(7) {
+    margin-bottom: 30px;
+  }
+  .portfolio-cards .portfolio-card:nth-child(8) {
+    margin-bottom: 30px;
+  }
+  .about-wrap .about-img {
+    display: none;
+  }
+  .about-wrap .about-me {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .test {
+    max-height: 210px;
+  }
+  .test-content p {
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px;
+  }
+  .test-author {
+    margin-top: 60px;
+  }
+  .read-title p {
+    font-size: 16px;
+  }
+  .read-posts {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .read-posts .post {
+    max-width: 100%;
+  }
+  .read-posts .post .img {
+    margin: 0 auto;
+  }
+  .read-posts .post .desc {
+    text-align: center;
+    padding: 0 10px;
+  }
+  .read-posts .post .desc button {
+    margin: 10px auto 30px;
+  }
+  .read-item a {
+    margin-right: 20px;
+  }
+  .footer-wrap {
+    height: 190px;
+    display: block;
+    padding-top: 20px;
+  }
+  .footer-wrap .social {
+    display: block;
+    text-align: center;
+  }
+  .footer-wrap .social p {
+    padding-bottom: 10px;
+  }
+  .footer-wrap .menu {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .footer-wrap .menu button {
+    margin-top: 20px;
+  }
+  .hire-wrap {
+    height: 100vh;
+    overflow: hidden;
+  }
+  .hire-wrap .left {
+    width: 100%;
+    padding-left: 0;
+  }
+  .hire-wrap .left .title {
+    margin-top: 200px;
+    text-align: center;
+  }
+  .hire-wrap .left .connect {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .hire-wrap .left .connect .phone {
+    margin-left: -40px;
+  }
+  .hire-wrap .left .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 100px;
+  }
+  .hire-wrap .left .btn {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 0;
+    margin-top: 100px;
+  }
+  .hire-wrap .right {
+    display: none;
+  }
+  .project-wrap {
+    height: 100vh;
+  }
+  .project-wrap .left {
+    display: none;
+  }
+  .project-wrap .right {
+    width: 100%;
+    padding: 0;
+    padding-top: 150px;
+  }
+  .project-wrap .right .title {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  .project-wrap .right .client {
+    margin-left: 30px;
+    margin-bottom: 50px;
+  }
+  .project-wrap .right .desc {
+    padding: 0 30px;
+    margin-bottom: 50px;
+  }
+  .resume-wrap .resume-box {
+    display: block;
+  }
+  .resume-wrap .resume-box .left {
+    margin-bottom: 50px;
+    min-width: 100%;
+    text-align: center;
+    border: none;
+    padding: 0 5px;
+  }
+  .resume-wrap .resume-box .right {
+    min-width: 100%;
+    padding: 0 5px;
+    text-align: center;
+  }
+  .resume-wrap .resume-box .right .skills .content {
+    margin: auto;
+  }
+  .resume-wrap .resume-box .right .awards .content span {
+    padding-left: 30px;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .header-wrap .logo {
+    margin: 0 auto;
+  }
+  .header-wrap .menu {
+    margin: 0 auto;
+  }
+  .header-title .desc {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  .header-title .desc .btn {
+    margin-top: 50px;
+  }
+  .header-title .desc .btn button {
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+  .header-title .header-img {
+    display: none;
+  }
+  .portfolio-cards {
+    margin: 30px 110px;
+  }
+  .portfolio-cards button {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .portfolio-cards .portfolio-card {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .portfolio-cards .portfolio-card:hover {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  .portfolio-cards .portfolio-card:nth-child(7) {
+    margin-bottom: 30px;
+  }
+  .portfolio-cards .portfolio-card:nth-child(8) {
+    margin-bottom: 30px;
+  }
+  .portfolio-cards .portfolio-card:nth-child(9) {
+    margin: 0 auto;
+  }
+  .about-wrap .about-img {
+    display: none;
+  }
+  .about-wrap .about-me {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .read-posts {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .read-posts .post {
+    max-width: 100%;
+  }
+  .read-posts .post .img {
+    margin: 0 auto;
+  }
+  .read-posts .post .desc {
+    text-align: center;
+    padding: 0 10px;
+  }
+  .read-posts .post .desc button {
+    margin: 10px auto 30px;
+  }
+  .read-item a {
+    margin-right: 20px;
+  }
+  .footer-wrap {
+    height: 190px;
+    display: block;
+    padding-top: 20px;
+  }
+  .footer-wrap .social {
+    display: block;
+    text-align: center;
+  }
+  .footer-wrap .social p {
+    padding-bottom: 10px;
+  }
+  .footer-wrap .menu {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .footer-wrap .menu button {
+    margin-top: 20px;
+  }
+  .project-wrap {
+    height: 100vh;
+  }
+  .project-wrap .left {
+    width: 50%;
+  }
+  .project-wrap .left img {
+    height: 100%;
+  }
+  .project-wrap .right {
+    width: 50%;
+    padding: 0;
+    padding-top: 150px;
+  }
+  .project-wrap .right .title {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  .project-wrap .right .client {
+    margin-left: 30px;
+    margin-bottom: 50px;
+  }
+  .project-wrap .right .desc {
+    padding: 0 30px;
+    margin-bottom: 50px;
+  }
+  .resume-wrap .resume-box .right .awards .content {
+    margin-bottom: 52px;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  .header-wrap .logo {
+    margin: 0 auto;
+  }
+  .header-wrap .menu {
+    margin: 0 auto;
+  }
+  .header-title .desc {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  .header-title .desc .btn {
+    margin-top: 50px;
+  }
+  .header-title .desc .btn button {
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+  .footer-wrap {
+    height: 190px;
+    display: block;
+    padding-top: 20px;
+  }
+  .footer-wrap .social {
+    display: block;
+    text-align: center;
+  }
+  .footer-wrap .social p {
+    padding-bottom: 10px;
+  }
+  .footer-wrap .menu {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .footer-wrap .menu button {
+    margin-top: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

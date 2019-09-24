@@ -1,6 +1,7 @@
 /*---------------- фильтр portfolio   ---------------*/
 $(function () {
-  $('.portfolio-nav a').click(function () {
+  $('.portfolio-nav a').click(function (event) {
+    event.preventDefault();
     var get_id = this.id;
     var get_current = $('.portfolio-card.' + get_id);
     $('.portfolio-card').not(get_current).hide(500);

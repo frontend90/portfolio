@@ -154,9 +154,11 @@
 @media ( min-width: 321px ) and ( max-width: 480px )
   .header
     &-wrap 
+      flex-wrap: wrap
       & .logo 
         margin: 0 auto
         margin-bottom: 20px 
+        padding-left: 5px 
       & .menu 
         display: block
         text-align: center
@@ -180,7 +182,7 @@
         & .btn 
           margin-top: 50px
           & button 
-            margin-left: 20px
+            margin-left: 0px
             margin-bottom: 10px 
       & .header-img 
         display: none
@@ -204,6 +206,9 @@
           font-size: 80px 
         & p 
           padding: 0 10px
+        & .about-btn
+          & button  
+            margin-left: 0
   .test
     max-height: 275px
     &-content
@@ -310,10 +315,15 @@
 @media ( min-width: 481px ) and ( max-width: 768px )
   .header
     &-wrap 
+      flex-wrap: wrap
       & .logo 
-         margin: 0 auto
+        margin: 0 auto
+        margin-bottom: 20px 
       & .menu 
-        margin: 0 auto        
+        margin: 0 auto    
+        text-align: center   
+        & button 
+          margin-top: 20px 
     &-title
       & .desc 
         text-align: center
@@ -476,7 +486,7 @@
         display: none
   .portfolio 
     &-cards 
-      margin: 30px 110px 
+      margin: 30px 110px
       & button 
         flex-wrap: wrap
         flex-basis: 100%
@@ -572,6 +582,10 @@
           & button 
             margin-left: 20px
             margin-bottom: 10px 
+  .portfolio
+    &-cards 
+      margin-left: 90px 
+      margin-right: 90px
   .footer 
     &-wrap
       height: 190px

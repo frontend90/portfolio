@@ -1749,9 +1749,14 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 @media (min-width: 321px) and (max-width: 480px) {
+  .header-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   .header-wrap .logo {
     margin: 0 auto;
     margin-bottom: 20px;
+    padding-left: 5px;
   }
   .header-wrap .menu {
     display: block;
@@ -1788,7 +1793,7 @@ h1, h2, h3, h4, h5, h6, p {
     margin-top: 50px;
   }
   .header-title .desc .btn button {
-    margin-left: 20px;
+    margin-left: 0px;
     margin-bottom: 10px;
   }
   .header-title .header-img {
@@ -1820,6 +1825,9 @@ h1, h2, h3, h4, h5, h6, p {
   }
   .about-wrap .about-me p {
     padding: 0 10px;
+  }
+  .about-wrap .about-me .about-btn button {
+    margin-left: 0;
   }
   .test {
     max-height: 275px;
@@ -1955,11 +1963,20 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
+  .header-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   .header-wrap .logo {
     margin: 0 auto;
+    margin-bottom: 20px;
   }
   .header-wrap .menu {
     margin: 0 auto;
+    text-align: center;
+  }
+  .header-wrap .menu button {
+    margin-top: 20px;
   }
   .header-title .desc {
     text-align: center;
@@ -2290,6 +2307,10 @@ h1, h2, h3, h4, h5, h6, p {
   .header-title .desc .btn button {
     margin-left: 20px;
     margin-bottom: 10px;
+  }
+  .portfolio-cards {
+    margin-left: 90px;
+    margin-right: 90px;
   }
   .footer-wrap {
     height: 190px;

@@ -1821,13 +1821,14 @@ h1, h2, h3, h4, h5, h6, p {
     text-align: center;
   }
   .about-wrap .about-me h3 {
-    font-size: 80px;
+    font-size: 60px;
   }
   .about-wrap .about-me p {
     padding: 0 10px;
   }
   .about-wrap .about-me .about-btn button {
     margin-left: 0;
+    margin-bottom: 20px;
   }
   .test {
     max-height: 275px;
@@ -1836,9 +1837,10 @@ h1, h2, h3, h4, h5, h6, p {
     width: 100%;
     height: 100%;
     padding: 10px 10px;
+    line-height: 2;
   }
   .test-author {
-    margin-top: 60px;
+    margin-top: 53px;
   }
   .read-title p {
     font-size: 16px;
@@ -1891,7 +1893,7 @@ h1, h2, h3, h4, h5, h6, p {
     padding-left: 0;
   }
   .hire-wrap .left .title {
-    margin-top: 200px;
+    margin-top: 150px;
     text-align: center;
   }
   .hire-wrap .left .connect {
@@ -2088,12 +2090,12 @@ h1, h2, h3, h4, h5, h6, p {
     padding-left: 0;
   }
   .hire-wrap .left .title {
-    margin-top: 200px;
+    margin-top: 50px;
     text-align: center;
   }
   .hire-wrap .left .connect {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 20px;
   }
   .hire-wrap .left .connect .phone {
     margin-left: -40px;
@@ -2105,14 +2107,14 @@ h1, h2, h3, h4, h5, h6, p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-top: 100px;
+    margin-top: 50px;
   }
   .hire-wrap .left .btn {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     margin-right: 0;
-    margin-top: 100px;
+    margin-top: 20px;
   }
   .hire-wrap .right {
     display: none;
@@ -2126,11 +2128,11 @@ h1, h2, h3, h4, h5, h6, p {
   .project-wrap .right {
     width: 100%;
     padding: 0;
-    padding-top: 150px;
+    padding-top: 50px;
   }
   .project-wrap .right .title {
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
   }
   .project-wrap .right .client {
     margin-left: 30px;

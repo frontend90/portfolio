@@ -46,9 +46,12 @@
     & .left 
       overflow: hidden
       width: 65%
+      height: 100%
       position: relative
       & img 
         position: absolute
+        width: 100%
+        height: 100%
         top: 50%
         left: 50%
         transform: translate3d(-50%,-50%,0)
@@ -87,3 +90,13 @@
           font-size: 12px 
           +grey 
           line-height: 24px 
+      & a 
+        text-transform: uppercase
+        display: flex
+        margin-top: 50px 
+        +bold 
+        +black 
+        font-size: 16px 
+        transition: 0.2s
+        &:hover
+          transform: rotateX(180deg)

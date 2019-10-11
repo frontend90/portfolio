@@ -297,7 +297,12 @@ h1, h2, h3, h4, h5, h6, p {
           justify-content: space-between;
 }
 
-.portfolio-cards button {
+.portfolio-cards .btn {
+  margin: auto;
+  margin-top: 40px;
+}
+
+.portfolio-cards .btn button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -318,12 +323,11 @@ h1, h2, h3, h4, h5, h6, p {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 20px;
-  margin-top: 40px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
-.portfolio-cards button:hover {
+.portfolio-cards .btn button:hover {
   background: #2b2a2c;
   color: #ffffff;
 }
@@ -869,11 +873,14 @@ h1, h2, h3, h4, h5, h6, p {
 .project-wrap .left {
   overflow: hidden;
   width: 65%;
+  height: 100%;
   position: relative;
 }
 
 .project-wrap .left img {
   position: absolute;
+  width: 100%;
+  height: 100%;
   top: 50%;
   left: 50%;
   -webkit-transform: translate3d(-50%, -50%, 0);
@@ -933,6 +940,25 @@ h1, h2, h3, h4, h5, h6, p {
   font-size: 12px;
   color: #6a696b;
   line-height: 24px;
+}
+
+.project-wrap .right a {
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #2b2a2c;
+  font-size: 16px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.project-wrap .right a:hover {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
 }
 
 .resume {
@@ -1548,7 +1574,7 @@ h1, h2, h3, h4, h5, h6, p {
           transform: scale(0.9);
 }
 
-@media (min-width: 0px) and (max-width: 320px) {
+@media (min-width: 0px) and (max-width: 375px) {
   .header-wrap {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1601,6 +1627,9 @@ h1, h2, h3, h4, h5, h6, p {
   .portfolio-cards .portfolio-card {
     width: 100%;
   }
+  .portfolio-cards .portfolio-card img {
+    width: 100%;
+  }
   .portfolio-cards .portfolio-card:hover {
     -webkit-transform: scale(1);
             transform: scale(1);
@@ -1647,6 +1676,10 @@ h1, h2, h3, h4, h5, h6, p {
   }
   .read-posts .post {
     max-width: 100%;
+    margin: auto;
+  }
+  .read-posts .post .img {
+    width: 98%;
   }
   .read-posts .post .desc {
     text-align: center;
@@ -1710,6 +1743,9 @@ h1, h2, h3, h4, h5, h6, p {
   .project-wrap {
     height: 100vh;
   }
+  .project-wrap .close {
+    right: 25px;
+  }
   .project-wrap .left {
     display: none;
   }
@@ -1727,6 +1763,12 @@ h1, h2, h3, h4, h5, h6, p {
   .project-wrap .right .desc {
     padding: 0 10px;
     margin-bottom: 50px;
+  }
+  .project-wrap .right a {
+    margin-bottom: 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .resume-wrap .resume-box {
     display: block;
@@ -1748,7 +1790,7 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
-@media (min-width: 321px) and (max-width: 480px) {
+@media screen and (min-width: 376px) and (max-width: 412px) {
   .header-wrap {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1920,6 +1962,9 @@ h1, h2, h3, h4, h5, h6, p {
   .project-wrap {
     height: 100vh;
   }
+  .project-wrap .close {
+    right: 25px;
+  }
   .project-wrap .left {
     display: none;
   }
@@ -1938,6 +1983,12 @@ h1, h2, h3, h4, h5, h6, p {
   }
   .project-wrap .right .desc {
     padding: 0 10px;
+    margin-bottom: 50px;
+  }
+  .project-wrap .right a {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-bottom: 50px;
   }
   .resume-wrap .resume-box {
@@ -1964,21 +2015,36 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 413px) and (max-width: 414px) {
   .header-wrap {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
   .header-wrap .logo {
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
   }
   .header-wrap .menu {
     margin: 0 auto;
     text-align: center;
   }
+  .header-wrap .menu a {
+    margin-right: 15px;
+  }
   .header-wrap .menu button {
+    margin: auto;
     margin-top: 20px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .header-title .desc {
     text-align: center;
@@ -1999,7 +2065,6 @@ h1, h2, h3, h4, h5, h6, p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-left: 30px;
   }
   .portfolio-cards button {
     -ms-flex-wrap: wrap;
@@ -2028,8 +2093,239 @@ h1, h2, h3, h4, h5, h6, p {
     text-align: center;
     margin: 0 auto;
   }
+  .about-wrap .about-me h3 {
+    font-size: 70px;
+  }
   .test {
-    max-height: 210px;
+    max-height: 260px;
+  }
+  .test-content p {
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px;
+  }
+  .test-author {
+    margin-top: 40px;
+  }
+  .read-title p {
+    font-size: 16px;
+  }
+  .read-posts {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .read-posts .post {
+    max-width: 100%;
+  }
+  .read-posts .post .img {
+    margin: 0 auto;
+  }
+  .read-posts .post .desc {
+    text-align: center;
+    padding: 0 10px;
+  }
+  .read-posts .post .desc button {
+    margin: 10px auto 30px;
+  }
+  .read-item a {
+    margin-right: 20px;
+  }
+  .footer-wrap {
+    height: 190px;
+    display: block;
+    padding-top: 20px;
+  }
+  .footer-wrap .social {
+    display: block;
+    text-align: center;
+  }
+  .footer-wrap .social p {
+    padding-bottom: 10px;
+  }
+  .footer-wrap .menu {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .footer-wrap .menu button {
+    margin-top: 20px;
+  }
+  .hire-wrap {
+    height: 100vh;
+    overflow: auto;
+  }
+  .hire-wrap .left {
+    width: 100%;
+    padding-left: 0;
+  }
+  .hire-wrap .left .title {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .hire-wrap .left .connect {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .hire-wrap .left .connect .phone {
+    margin-left: -40px;
+  }
+  .hire-wrap .left .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 50px;
+  }
+  .hire-wrap .left .btn {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 0;
+    margin-top: 20px;
+  }
+  .hire-wrap .right {
+    display: none;
+  }
+  .project-wrap {
+    height: 100vh;
+  }
+  .project-wrap .close {
+    right: 25px;
+  }
+  .project-wrap .left {
+    display: none;
+  }
+  .project-wrap .right {
+    width: 100%;
+    padding: 0;
+    padding-top: 50px;
+  }
+  .project-wrap .right .title {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .project-wrap .right .client {
+    margin-left: 30px;
+    margin-bottom: 50px;
+  }
+  .project-wrap .right .desc {
+    padding: 0 30px;
+    margin-bottom: 50px;
+  }
+  .project-wrap .right a {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 50px;
+  }
+  .resume-wrap .resume-box {
+    display: block;
+  }
+  .resume-wrap .resume-box .left {
+    margin-bottom: 50px;
+    min-width: 100%;
+    text-align: center;
+    border: none;
+    padding: 0 5px;
+  }
+  .resume-wrap .resume-box .right {
+    min-width: 100%;
+    padding: 0 5px;
+    text-align: center;
+  }
+  .resume-wrap .resume-box .right .skills .content {
+    margin: auto;
+  }
+  .resume-wrap .resume-box .right .awards .content span {
+    padding-left: 30px;
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 415px) and (max-width: 667px) {
+  .header-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .header-wrap .logo {
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  .header-wrap .menu {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .header-wrap .menu a {
+    margin-right: 15px;
+  }
+  .header-wrap .menu button {
+    margin: auto;
+    margin-top: 20px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header-title .desc {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  .header-title .desc .btn {
+    margin-top: 50px;
+  }
+  .header-title .desc .btn button {
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+  .header-title .header-img {
+    display: none;
+  }
+  .portfolio-cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .portfolio-cards button {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  .portfolio-cards .portfolio-card {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .portfolio-cards .portfolio-card:hover {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  .portfolio-cards .portfolio-card:nth-child(7) {
+    margin-bottom: 30px;
+  }
+  .portfolio-cards .portfolio-card:nth-child(8) {
+    margin-bottom: 30px;
+  }
+  .about-wrap .about-img {
+    display: none;
+  }
+  .about-wrap .about-me {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .about-wrap .about-me h3 {
+    font-size: 70px;
+  }
+  .test {
+    max-height: 200px;
   }
   .test-content p {
     width: 100%;
@@ -2115,12 +2411,16 @@ h1, h2, h3, h4, h5, h6, p {
             justify-content: center;
     margin-right: 0;
     margin-top: 20px;
+    margin-bottom: 50px;
   }
   .hire-wrap .right {
     display: none;
   }
   .project-wrap {
     height: 100vh;
+  }
+  .project-wrap .close {
+    right: 25px;
   }
   .project-wrap .left {
     display: none;
@@ -2140,6 +2440,12 @@ h1, h2, h3, h4, h5, h6, p {
   }
   .project-wrap .right .desc {
     padding: 0 30px;
+    margin-bottom: 50px;
+  }
+  .project-wrap .right a {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-bottom: 50px;
   }
   .resume-wrap .resume-box {
@@ -2166,12 +2472,36 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
-@media (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 668px) and (max-width: 684px) {
+  .header-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   .header-wrap .logo {
     margin: 0 auto;
+    margin-bottom: 50px;
   }
   .header-wrap .menu {
     margin: 0 auto;
+    text-align: center;
+  }
+  .header-wrap .menu a {
+    margin-right: 15px;
+  }
+  .header-wrap .menu button {
+    margin: auto;
+    margin-top: 20px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .header-title .desc {
     text-align: center;
@@ -2189,13 +2519,15 @@ h1, h2, h3, h4, h5, h6, p {
     display: none;
   }
   .portfolio-cards {
-    margin: 30px 110px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .portfolio-cards button {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
   }
   .portfolio-cards .portfolio-card {
     -ms-flex-wrap: wrap;
@@ -2211,15 +2543,29 @@ h1, h2, h3, h4, h5, h6, p {
   .portfolio-cards .portfolio-card:nth-child(8) {
     margin-bottom: 30px;
   }
-  .portfolio-cards .portfolio-card:nth-child(9) {
-    margin: 0 auto;
-  }
   .about-wrap .about-img {
     display: none;
   }
   .about-wrap .about-me {
     text-align: center;
     margin: 0 auto;
+  }
+  .about-wrap .about-me h3 {
+    font-size: 70px;
+  }
+  .test {
+    max-height: 200px;
+  }
+  .test-content p {
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px;
+  }
+  .test-author {
+    margin-top: 60px;
+  }
+  .read-title p {
+    font-size: 16px;
   }
   .read-posts {
     -ms-flex-wrap: wrap;
@@ -2260,23 +2606,62 @@ h1, h2, h3, h4, h5, h6, p {
   .footer-wrap .menu button {
     margin-top: 20px;
   }
+  .hire-wrap {
+    height: 100vh;
+    overflow: auto;
+  }
+  .hire-wrap .left {
+    width: 100%;
+    padding-left: 0;
+  }
+  .hire-wrap .left .title {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .hire-wrap .left .connect {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .hire-wrap .left .connect .phone {
+    margin-left: -40px;
+  }
+  .hire-wrap .left .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 50px;
+  }
+  .hire-wrap .left .btn {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 0;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  .hire-wrap .right {
+    display: none;
+  }
   .project-wrap {
     height: 100vh;
   }
-  .project-wrap .left {
-    width: 50%;
+  .project-wrap .close {
+    right: 25px;
   }
-  .project-wrap .left img {
-    height: 100%;
+  .project-wrap .left {
+    display: none;
   }
   .project-wrap .right {
-    width: 50%;
+    width: 100%;
     padding: 0;
-    padding-top: 150px;
+    padding-top: 50px;
   }
   .project-wrap .right .title {
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
   }
   .project-wrap .right .client {
     margin-left: 30px;
@@ -2286,17 +2671,66 @@ h1, h2, h3, h4, h5, h6, p {
     padding: 0 30px;
     margin-bottom: 50px;
   }
-  .resume-wrap .resume-box .right .awards .content {
-    margin-bottom: 52px;
+  .project-wrap .right a {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 50px;
+  }
+  .resume-wrap .resume-box {
+    display: block;
+  }
+  .resume-wrap .resume-box .left {
+    margin-bottom: 50px;
+    min-width: 100%;
+    text-align: center;
+    border: none;
+    padding: 0 5px;
+  }
+  .resume-wrap .resume-box .right {
+    min-width: 100%;
+    padding: 0 5px;
+    text-align: center;
+  }
+  .resume-wrap .resume-box .right .skills .content {
+    margin: auto;
+  }
+  .resume-wrap .resume-box .right .awards .content span {
+    padding-left: 30px;
+    margin-right: 0;
   }
 }
 
-@media (min-width: 993px) and (max-width: 1200px) {
+@media screen and (min-width: 685px) and (max-width: 734px) {
+  .header-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   .header-wrap .logo {
     margin: 0 auto;
+    margin-bottom: 50px;
   }
   .header-wrap .menu {
     margin: 0 auto;
+    text-align: center;
+  }
+  .header-wrap .menu a {
+    margin-right: 15px;
+  }
+  .header-wrap .menu button {
+    margin: auto;
+    margin-top: 20px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .header-title .desc {
     text-align: center;
@@ -2310,9 +2744,77 @@ h1, h2, h3, h4, h5, h6, p {
     margin-left: 20px;
     margin-bottom: 10px;
   }
+  .header-title .header-img {
+    display: none;
+  }
   .portfolio-cards {
-    margin-left: 90px;
-    margin-right: 90px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .portfolio-cards button {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  .portfolio-cards .portfolio-card {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .portfolio-cards .portfolio-card:hover {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  .portfolio-cards .portfolio-card:nth-child(7) {
+    margin-bottom: 30px;
+  }
+  .portfolio-cards .portfolio-card:nth-child(8) {
+    margin-bottom: 30px;
+  }
+  .about-wrap .about-img {
+    display: none;
+  }
+  .about-wrap .about-me {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .about-wrap .about-me h3 {
+    font-size: 70px;
+  }
+  .test {
+    max-height: 200px;
+  }
+  .test-content p {
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px;
+  }
+  .test-author {
+    margin-top: 60px;
+  }
+  .read-title p {
+    font-size: 16px;
+  }
+  .read-posts {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .read-posts .post {
+    max-width: 100%;
+  }
+  .read-posts .post .img {
+    margin: 0 auto;
+  }
+  .read-posts .post .desc {
+    text-align: center;
+    padding: 0 10px;
+  }
+  .read-posts .post .desc button {
+    margin: 10px auto 30px;
+  }
+  .read-item a {
+    margin-right: 20px;
   }
   .footer-wrap {
     height: 190px;
@@ -2332,6 +2834,782 @@ h1, h2, h3, h4, h5, h6, p {
   }
   .footer-wrap .menu button {
     margin-top: 20px;
+  }
+  .hire-wrap {
+    height: 100vh;
+    overflow: auto;
+  }
+  .hire-wrap .left {
+    width: 100%;
+    padding-left: 0;
+  }
+  .hire-wrap .left .title {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .hire-wrap .left .connect {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .hire-wrap .left .connect .phone {
+    margin-left: -40px;
+  }
+  .hire-wrap .left .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 50px;
+  }
+  .hire-wrap .left .btn {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 0;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  .hire-wrap .right {
+    display: none;
+  }
+  .project-wrap {
+    height: 100vh;
+  }
+  .project-wrap .close {
+    right: 25px;
+  }
+  .project-wrap .left {
+    display: none;
+  }
+  .project-wrap .right {
+    width: 100%;
+    padding: 0;
+    padding-top: 50px;
+  }
+  .project-wrap .right .title {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .project-wrap .right .client {
+    margin-left: 30px;
+    margin-bottom: 50px;
+  }
+  .project-wrap .right .desc {
+    padding: 0 30px;
+    margin-bottom: 50px;
+  }
+  .project-wrap .right a {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 50px;
+  }
+  .resume-wrap .resume-box {
+    display: block;
+  }
+  .resume-wrap .resume-box .left {
+    margin-bottom: 50px;
+    min-width: 100%;
+    text-align: center;
+    border: none;
+    padding: 0 5px;
+  }
+  .resume-wrap .resume-box .right {
+    min-width: 100%;
+    padding: 0 5px;
+    text-align: center;
+  }
+  .resume-wrap .resume-box .right .skills .content {
+    margin: auto;
+  }
+  .resume-wrap .resume-box .right .awards .content span {
+    padding-left: 30px;
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 735px) and (max-width: 736px) {
+  .header-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .header-wrap .logo {
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  .header-wrap .menu {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .header-wrap .menu a {
+    margin-right: 15px;
+  }
+  .header-wrap .menu button {
+    margin: auto;
+    margin-top: 20px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header-title .desc {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  .header-title .desc .btn {
+    margin-top: 50px;
+  }
+  .header-title .desc .btn button {
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+  .header-title .header-img {
+    display: none;
+  }
+  .portfolio-cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .portfolio-cards button {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  .portfolio-cards .portfolio-card {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .portfolio-cards .portfolio-card:hover {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  .portfolio-cards .portfolio-card:nth-child(7) {
+    margin-bottom: 30px;
+  }
+  .portfolio-cards .portfolio-card:nth-child(8) {
+    margin-bottom: 30px;
+  }
+  .about-wrap .about-img {
+    display: none;
+  }
+  .about-wrap .about-me {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .about-wrap .about-me h3 {
+    font-size: 70px;
+  }
+  .test {
+    max-height: 200px;
+  }
+  .test-content p {
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px;
+  }
+  .test-author {
+    margin-top: 60px;
+  }
+  .read-title p {
+    font-size: 16px;
+  }
+  .read-posts {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .read-posts .post {
+    max-width: 100%;
+  }
+  .read-posts .post .img {
+    margin: 0 auto;
+  }
+  .read-posts .post .desc {
+    text-align: center;
+    padding: 0 10px;
+  }
+  .read-posts .post .desc button {
+    margin: 10px auto 30px;
+  }
+  .read-item a {
+    margin-right: 20px;
+  }
+  .footer-wrap {
+    height: 190px;
+    display: block;
+    padding-top: 20px;
+  }
+  .footer-wrap .social {
+    display: block;
+    text-align: center;
+  }
+  .footer-wrap .social p {
+    padding-bottom: 10px;
+  }
+  .footer-wrap .menu {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .footer-wrap .menu button {
+    margin-top: 20px;
+  }
+  .hire-wrap {
+    height: 100vh;
+    overflow: auto;
+  }
+  .hire-wrap .left {
+    width: 100%;
+    padding-left: 0;
+  }
+  .hire-wrap .left .title {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .hire-wrap .left .connect {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .hire-wrap .left .connect .phone {
+    margin-left: -40px;
+  }
+  .hire-wrap .left .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 50px;
+  }
+  .hire-wrap .left .btn {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 0;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  .hire-wrap .right {
+    display: none;
+  }
+  .project-wrap {
+    height: 100vh;
+  }
+  .project-wrap .close {
+    right: 25px;
+  }
+  .project-wrap .left {
+    display: none;
+  }
+  .project-wrap .right {
+    width: 100%;
+    padding: 0;
+    padding-top: 50px;
+  }
+  .project-wrap .right .title {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .project-wrap .right .client {
+    margin-left: 30px;
+    margin-bottom: 50px;
+  }
+  .project-wrap .right .desc {
+    padding: 0 30px;
+    margin-bottom: 50px;
+  }
+  .project-wrap .right a {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 50px;
+  }
+  .resume-wrap .resume-box {
+    display: block;
+  }
+  .resume-wrap .resume-box .left {
+    margin-bottom: 50px;
+    min-width: 100%;
+    text-align: center;
+    border: none;
+    padding: 0 5px;
+  }
+  .resume-wrap .resume-box .right {
+    min-width: 100%;
+    padding: 0 5px;
+    text-align: center;
+  }
+  .resume-wrap .resume-box .right .skills .content {
+    margin: auto;
+  }
+  .resume-wrap .resume-box .right .awards .content span {
+    padding-left: 30px;
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 737px) and (max-width: 768px) {
+  .header-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .header-wrap .logo {
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  .header-wrap .menu {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .header-wrap .menu a {
+    margin-right: 15px;
+  }
+  .header-wrap .menu button {
+    margin: auto;
+    margin-top: 20px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header-title .desc {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  .header-title .desc .btn {
+    margin-top: 50px;
+  }
+  .header-title .desc .btn button {
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+  .header-title .header-img {
+    display: none;
+  }
+  .portfolio .portfolio-cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .portfolio .portfolio-cards button {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  .portfolio .portfolio-cards .portfolio-card {
+    min-width: 380px;
+  }
+  .portfolio .portfolio-cards .portfolio-card img {
+    width: 100%;
+  }
+  .portfolio .portfolio-cards .portfolio-card:hover {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  .portfolio .portfolio-cards .portfolio-card:nth-child(7) {
+    margin-bottom: 30px;
+  }
+  .portfolio .portfolio-cards .portfolio-card:nth-child(8) {
+    margin-bottom: 30px;
+  }
+  .about-wrap .about-img {
+    display: none;
+  }
+  .about-wrap .about-me {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .about-wrap .about-me h3 {
+    font-size: 70px;
+  }
+  .test {
+    max-height: 200px;
+  }
+  .test-content p {
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px;
+  }
+  .test-author {
+    margin-top: 60px;
+  }
+  .read-title p {
+    font-size: 16px;
+  }
+  .read-posts {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .read-posts .post {
+    max-width: 100%;
+  }
+  .read-posts .post .img {
+    margin: 0 auto;
+  }
+  .read-posts .post .desc {
+    text-align: center;
+    padding: 0 10px;
+  }
+  .read-posts .post .desc button {
+    margin: 10px auto 30px;
+  }
+  .read-item a {
+    margin-right: 20px;
+  }
+  .footer-wrap {
+    height: 190px;
+    display: block;
+    padding-top: 20px;
+  }
+  .footer-wrap .social {
+    display: block;
+    text-align: center;
+  }
+  .footer-wrap .social p {
+    padding-bottom: 10px;
+  }
+  .footer-wrap .menu {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .footer-wrap .menu button {
+    margin-top: 20px;
+  }
+  .hire-wrap {
+    height: 100vh;
+    overflow: auto;
+  }
+  .hire-wrap .left {
+    width: 100%;
+    padding-left: 0;
+  }
+  .hire-wrap .left .title {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .hire-wrap .left .connect {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .hire-wrap .left .connect .phone {
+    margin-left: -40px;
+  }
+  .hire-wrap .left .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 50px;
+  }
+  .hire-wrap .left .btn {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 0;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  .hire-wrap .right {
+    display: none;
+  }
+  .project-wrap {
+    height: 100vh;
+  }
+  .project-wrap .close {
+    right: 25px;
+  }
+  .project-wrap .left {
+    display: none;
+  }
+  .project-wrap .right {
+    width: 100%;
+    padding: 0;
+    padding-top: 50px;
+  }
+  .project-wrap .right .title {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .project-wrap .right .client {
+    margin-left: 30px;
+    margin-bottom: 50px;
+  }
+  .project-wrap .right .desc {
+    padding: 0 30px;
+    margin-bottom: 50px;
+  }
+  .project-wrap .right a {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 50px;
+  }
+  .resume-wrap .resume-box {
+    display: block;
+  }
+  .resume-wrap .resume-box .left {
+    margin-bottom: 50px;
+    min-width: 100%;
+    text-align: center;
+    border: none;
+    padding: 0 5px;
+  }
+  .resume-wrap .resume-box .right {
+    min-width: 100%;
+    padding: 0 5px;
+    text-align: center;
+  }
+  .resume-wrap .resume-box .right .skills .content {
+    margin: auto;
+  }
+  .resume-wrap .resume-box .right .awards .content span {
+    padding-left: 30px;
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .header-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .header-wrap .logo {
+    margin-left: 50px;
+  }
+  .header-wrap .menu {
+    margin-right: 50px;
+  }
+  .header-title {
+    margin-top: 100px;
+  }
+  .header-title .desc {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  .header-title .desc .btn {
+    margin-top: 50px;
+  }
+  .header-title .desc .btn button {
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+  .header-title .header-img {
+    display: none;
+  }
+  .portfolio .portfolio-cards {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .portfolio .portfolio-cards .btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+  .portfolio .portfolio-cards .portfolio-card {
+    min-width: 380px;
+  }
+  .portfolio .portfolio-cards .portfolio-card img {
+    width: 100%;
+  }
+  .portfolio .portfolio-cards .portfolio-card:hover {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  .portfolio .portfolio-cards .portfolio-card:nth-child(7) {
+    margin-bottom: 30px;
+  }
+  .portfolio .portfolio-cards .portfolio-card:nth-child(8) {
+    margin-bottom: 30px;
+  }
+  .about-wrap .about-img {
+    display: none;
+  }
+  .about-wrap .about-me {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .about-wrap .about-me h3 {
+    font-size: 70px;
+  }
+  .test {
+    max-height: 150px;
+  }
+  .test-content p {
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px;
+  }
+  .test-author {
+    margin-top: 50px;
+  }
+  .read-title p {
+    font-size: 16px;
+  }
+  .read-posts {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .read-posts .post {
+    max-width: 100%;
+  }
+  .read-posts .post .img {
+    margin: 0 auto;
+  }
+  .read-posts .post .desc {
+    text-align: center;
+    padding: 0 20px;
+  }
+  .read-posts .post .desc button {
+    margin: 10px auto 30px;
+  }
+  .read-item a {
+    margin-right: 20px;
+  }
+  .footer-wrap {
+    height: 190px;
+    display: block;
+    padding-top: 20px;
+  }
+  .footer-wrap .social {
+    display: block;
+    text-align: center;
+  }
+  .footer-wrap .social p {
+    padding-bottom: 10px;
+  }
+  .footer-wrap .menu {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .footer-wrap .menu button {
+    margin-top: 20px;
+  }
+  .hire-wrap {
+    height: 100vh;
+    overflow: auto;
+  }
+  .hire-wrap .left {
+    width: 100%;
+    padding-left: 0;
+  }
+  .hire-wrap .left .title {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .hire-wrap .left .connect {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .hire-wrap .left .connect .phone {
+    margin-left: -40px;
+  }
+  .hire-wrap .left .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 50px;
+  }
+  .hire-wrap .left .btn {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 0;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  .hire-wrap .right {
+    display: none;
+  }
+  .project-wrap {
+    height: 100vh;
+  }
+  .project-wrap .close {
+    right: 25px;
+  }
+  .project-wrap .left {
+    display: none;
+  }
+  .project-wrap .right {
+    width: 100%;
+    padding: 0;
+    padding-top: 50px;
+  }
+  .project-wrap .right .title {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .project-wrap .right .client {
+    margin-left: 30px;
+    margin-bottom: 50px;
+  }
+  .project-wrap .right .desc {
+    padding: 0 30px;
+    margin-bottom: 50px;
+  }
+  .project-wrap .right a {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 50px;
+  }
+  .resume-wrap .resume-box {
+    display: block;
+  }
+  .resume-wrap .resume-box .left {
+    margin-bottom: 50px;
+    min-width: 100%;
+    text-align: center;
+    border: none;
+    padding: 0 5px;
+  }
+  .resume-wrap .resume-box .left .content .text {
+    padding: 0 20px;
+  }
+  .resume-wrap .resume-box .right {
+    min-width: 100%;
+    padding: 0 5px;
+    text-align: center;
+  }
+  .resume-wrap .resume-box .right .skills .content {
+    margin: auto;
+  }
+  .resume-wrap .resume-box .right .awards .content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .resume-wrap .resume-box .right .awards .content span {
+    padding-left: 30px;
+    margin-right: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

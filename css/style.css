@@ -268,7 +268,7 @@ h1, h2, h3, h4, h5, h6, p {
   border-bottom: 1px solid rgba(43, 42, 44, 0.1);
 }
 
-.portfolio-nav {
+.portfolio .portfolio-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -278,7 +278,7 @@ h1, h2, h3, h4, h5, h6, p {
   margin-top: 45px;
 }
 
-.portfolio-nav a {
+.portfolio .portfolio-nav a {
   color: #6a696b;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -288,15 +288,15 @@ h1, h2, h3, h4, h5, h6, p {
   transition: 0.2s;
 }
 
-.portfolio-nav a:hover {
+.portfolio .portfolio-nav a:hover {
   color: #2b2a2c;
 }
 
-.portfolio-nav a:first-of-type {
+.portfolio .portfolio-nav a:first-of-type {
   margin-left: 0;
 }
 
-.portfolio-cards {
+.portfolio .portfolio-cards {
   margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -309,26 +309,70 @@ h1, h2, h3, h4, h5, h6, p {
   position: relative;
 }
 
-.portfolio-cards .load-more {
-  margin-top: 30px;
+.portfolio .portfolio-cards .portfolio-card {
+  height: 370px;
+  max-width: 370px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0px 10px #6a696b;
+          box-shadow: 0 0px 10px #6a696b;
+  margin-bottom: 30px;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.portfolio .portfolio-cards .portfolio-card:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.portfolio .portfolio-cards .portfolio-card img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.portfolio .portfolio-cards .portfolio-card .desc {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+
+.portfolio .portfolio-cards .portfolio-card .desc p {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #2b2a2c;
+  letter-spacing: 0.6px;
+}
+
+.portfolio .portfolio-cards .portfolio-card .desc .date {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  display: none;
 }
 
-.portfolio-cards .load-more.active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.portfolio .portfolio-cards .portfolio-card .desc .date h4 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #2b2a2c;
 }
 
-.portfolio-cards .btn {
+.portfolio .portfolio-cards .portfolio-card .desc .date span {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #2b2a2c;
+  margin-right: 15px;
+}
+
+.portfolio .portfolio-cards .btn {
   position: absolute;
   bottom: -70px;
   left: 50%;
@@ -336,7 +380,7 @@ h1, h2, h3, h4, h5, h6, p {
           transform: translateX(-50%);
 }
 
-.portfolio-cards .btn button {
+.portfolio .portfolio-cards .btn button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -361,84 +405,27 @@ h1, h2, h3, h4, h5, h6, p {
   transition: 0.2s;
 }
 
-.portfolio-cards .btn button:hover {
+.portfolio .portfolio-cards .btn button:hover {
   background: #2b2a2c;
   color: #ffffff;
 }
 
-.portfolio-card {
-  height: 370px;
-  max-width: 370px;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 0px 10px #6a696b;
-          box-shadow: 0 0px 10px #6a696b;
-  margin-bottom: 30px;
-  cursor: pointer;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.portfolio-card:nth-child(7) {
-  margin-bottom: 0;
-}
-
-.portfolio-card:nth-child(8) {
-  margin-bottom: 0;
-}
-
-.portfolio-card:nth-child(9) {
-  margin-bottom: 0;
-}
-
-.portfolio-card:hover {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
-}
-
-.portfolio-card img {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-.portfolio-card .desc {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  margin-left: 15px;
-}
-
-.portfolio-card .desc p {
-  text-transform: uppercase;
-  font-size: 12px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  color: #2b2a2c;
-  letter-spacing: 0.6px;
-}
-
-.portfolio-card .desc .date {
+.portfolio .portfolio-cards .load-more {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  display: none;
 }
 
-.portfolio-card .desc .date h4 {
-  text-transform: uppercase;
-  font-size: 16px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  color: #2b2a2c;
-}
-
-.portfolio-card .desc .date span {
-  text-transform: uppercase;
-  font-size: 16px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  color: #2b2a2c;
-  margin-right: 15px;
+.portfolio .portfolio-cards .load-more.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .about {
@@ -771,16 +758,31 @@ h1, h2, h3, h4, h5, h6, p {
   color: #6a696b;
 }
 
-.footer-wrap .social .fab {
-  font-family: 'fa-brands-400';
+.footer-wrap .social a {
+  margin-left: 15px;
+}
+
+.footer-wrap .social a .fas {
+  font-family: 'fa-solid-900';
   font-size: 20px;
   color: #6a696b;
-  margin-left: 15px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
-.footer-wrap .social .fab:hover {
+.footer-wrap .social a .fas:hover {
+  color: #ffffff;
+}
+
+.footer-wrap .social a .fab {
+  font-family: 'fa-brands-400';
+  font-size: 20px;
+  color: #6a696b;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.footer-wrap .social a .fab:hover {
   color: #ffffff;
 }
 
@@ -1658,21 +1660,25 @@ h1, h2, h3, h4, h5, h6, p {
   .header-title .header-img {
     display: none;
   }
-  .portfolio-cards .portfolio-card {
+  .portfolio .portfolio-cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .portfolio .portfolio-cards .portfolio-card {
     width: 100%;
   }
-  .portfolio-cards .portfolio-card img {
+  .portfolio .portfolio-cards .portfolio-card img {
     width: 100%;
   }
-  .portfolio-cards .portfolio-card:hover {
+  .portfolio .portfolio-cards .portfolio-card:hover {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  .portfolio-cards .portfolio-card:nth-child(7) {
-    margin-bottom: 30px;
-  }
-  .portfolio-cards .portfolio-card:nth-child(8) {
-    margin-bottom: 30px;
+  .portfolio .portfolio-cards .load-more {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .about-wrap .about-img {
     display: none;
@@ -1875,20 +1881,19 @@ h1, h2, h3, h4, h5, h6, p {
   .header-title .header-img {
     display: none;
   }
-  .portfolio-cards {
+  .portfolio .portfolio-cards {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .portfolio-cards .portfolio-card:hover {
+  .portfolio .portfolio-cards .portfolio-card:hover {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  .portfolio-cards .portfolio-card:nth-child(7) {
-    margin-bottom: 30px;
-  }
-  .portfolio-cards .portfolio-card:nth-child(8) {
-    margin-bottom: 30px;
+  .portfolio .portfolio-cards .load-more {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .about-wrap .about-img {
     display: none;
@@ -2095,30 +2100,19 @@ h1, h2, h3, h4, h5, h6, p {
   .header-title .header-img {
     display: none;
   }
-  .portfolio-cards {
+  .portfolio .portfolio-cards {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .portfolio-cards button {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
-  }
-  .portfolio-cards .portfolio-card {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .portfolio-cards .portfolio-card:hover {
+  .portfolio .portfolio-cards .portfolio-card:hover {
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
   }
-  .portfolio-cards .portfolio-card:nth-child(7) {
-    margin-bottom: 30px;
-  }
-  .portfolio-cards .portfolio-card:nth-child(8) {
-    margin-bottom: 30px;
+  .portfolio .portfolio-cards .load-more {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .about-wrap .about-img {
     display: none;
@@ -2323,30 +2317,19 @@ h1, h2, h3, h4, h5, h6, p {
   .header-title .header-img {
     display: none;
   }
-  .portfolio-cards {
+  .portfolio .portfolio-cards {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .portfolio-cards button {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
-  }
-  .portfolio-cards .portfolio-card {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .portfolio-cards .portfolio-card:hover {
+  .portfolio .portfolio-cards .portfolio-card:hover {
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
   }
-  .portfolio-cards .portfolio-card:nth-child(7) {
-    margin-bottom: 30px;
-  }
-  .portfolio-cards .portfolio-card:nth-child(8) {
-    margin-bottom: 30px;
+  .portfolio .portfolio-cards .load-more {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .about-wrap .about-img {
     display: none;
@@ -2552,30 +2535,19 @@ h1, h2, h3, h4, h5, h6, p {
   .header-title .header-img {
     display: none;
   }
-  .portfolio-cards {
+  .portfolio .portfolio-cards {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .portfolio-cards button {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
-  }
-  .portfolio-cards .portfolio-card {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .portfolio-cards .portfolio-card:hover {
+  .portfolio .portfolio-cards .portfolio-card:hover {
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
   }
-  .portfolio-cards .portfolio-card:nth-child(7) {
-    margin-bottom: 30px;
-  }
-  .portfolio-cards .portfolio-card:nth-child(8) {
-    margin-bottom: 30px;
+  .portfolio .portfolio-cards .load-more {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .about-wrap .about-img {
     display: none;
@@ -2781,30 +2753,23 @@ h1, h2, h3, h4, h5, h6, p {
   .header-title .header-img {
     display: none;
   }
-  .portfolio-cards {
+  .portfolio .portfolio-cards {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .portfolio-cards button {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
-  }
-  .portfolio-cards .portfolio-card {
+  .portfolio .portfolio-cards .portfolio-card {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .portfolio-cards .portfolio-card:hover {
+  .portfolio .portfolio-cards .portfolio-card:hover {
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
   }
-  .portfolio-cards .portfolio-card:nth-child(7) {
-    margin-bottom: 30px;
-  }
-  .portfolio-cards .portfolio-card:nth-child(8) {
-    margin-bottom: 30px;
+  .portfolio .portfolio-cards .load-more {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .about-wrap .about-img {
     display: none;
@@ -3010,30 +2975,19 @@ h1, h2, h3, h4, h5, h6, p {
   .header-title .header-img {
     display: none;
   }
-  .portfolio-cards {
+  .portfolio .portfolio-cards {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .portfolio-cards button {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
-  }
-  .portfolio-cards .portfolio-card {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .portfolio-cards .portfolio-card:hover {
+  .portfolio .portfolio-cards .portfolio-card:hover {
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
   }
-  .portfolio-cards .portfolio-card:nth-child(7) {
-    margin-bottom: 30px;
-  }
-  .portfolio-cards .portfolio-card:nth-child(8) {
-    margin-bottom: 30px;
+  .portfolio .portfolio-cards .load-more {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .about-wrap .about-img {
     display: none;
@@ -3244,27 +3198,16 @@ h1, h2, h3, h4, h5, h6, p {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .portfolio .portfolio-cards button {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
-  }
   .portfolio .portfolio-cards .portfolio-card {
     min-width: 380px;
   }
   .portfolio .portfolio-cards .portfolio-card img {
     width: 100%;
   }
-  .portfolio .portfolio-cards .portfolio-card:hover {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-  }
-  .portfolio .portfolio-cards .portfolio-card:nth-child(7) {
-    margin-bottom: 30px;
-  }
-  .portfolio .portfolio-cards .portfolio-card:nth-child(8) {
-    margin-bottom: 30px;
+  .portfolio .portfolio-cards .load-more {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .about-wrap .about-img {
     display: none;
@@ -3457,29 +3400,9 @@ h1, h2, h3, h4, h5, h6, p {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  .portfolio .portfolio-cards .btn {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 100%;
-  }
-  .portfolio .portfolio-cards .portfolio-card {
-    min-width: 380px;
-  }
-  .portfolio .portfolio-cards .portfolio-card img {
-    width: 100%;
-  }
-  .portfolio .portfolio-cards .portfolio-card:hover {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-  }
-  .portfolio .portfolio-cards .portfolio-card:nth-child(7) {
-    margin-bottom: 30px;
-  }
-  .portfolio .portfolio-cards .portfolio-card:nth-child(8) {
-    margin-bottom: 30px;
+  .portfolio .portfolio-cards .load-more {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .about-wrap .about-img {
     display: none;

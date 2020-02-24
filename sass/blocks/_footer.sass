@@ -12,14 +12,22 @@
         font-size: 14px 
         +reg 
         +grey 
-      & .fab 
-        +brand 
-        font-size: 20px 
-        +grey 
+      & a 
         margin-left: 15px 
-        transition: 0.2s
-        &:hover
-          color: #ffffff
+        & .fas
+          +solid
+          font-size: 20px 
+          +grey 
+          transition: 0.2s
+          &:hover
+            color: #ffffff
+        & .fab 
+          +brand 
+          font-size: 20px 
+          +grey 
+          transition: 0.2s
+          &:hover
+            color: #ffffff
     & .menu 
       & a 
         font-size: 14px 

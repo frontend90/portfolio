@@ -1,5 +1,5 @@
 .portfolio
-  &-nav 
+  & .portfolio-nav 
     display: flex
     justify-content: center
     margin-top: 45px
@@ -13,20 +13,49 @@
         +black
       &:first-of-type
         margin-left: 0
-  &-cards 
+  & .portfolio-cards 
     margin-top: 30px 
     display: flex
     flex-wrap: wrap
     justify-content: space-between
     position: relative
-    & .load-more
-      margin-top: 30px  
-      display: flex
-      flex-wrap: wrap
-      justify-content: space-between
-      display: none 
-      &.active 
-        display: flex 
+    & .portfolio-card 
+      height: 370px 
+      max-width: 370px 
+      border-radius: 5px 
+      box-shadow: 0 0px 10px #6a696b 
+      margin-bottom: 30px 
+      cursor: pointer
+      transition: 0.5s
+      &:hover
+        transform: scale(0.9)
+      & img 
+        border-top-left-radius: 5px 
+        border-top-right-radius: 5px 
+      & .desc 
+        margin-top: 15px
+        margin-bottom: 15px
+        margin-left: 15px 
+        & p 
+          text-transform: uppercase
+          font-size: 12px 
+          +reg 
+          +black
+          letter-spacing: 0.6px
+        & .date 
+          display: flex
+          justify-content: space-between
+          & h4
+            text-transform: uppercase
+            font-size: 16px 
+            +bold 
+            +black
+          & span 
+            text-transform: uppercase
+            font-size: 16px 
+            +bold 
+            +black
+            margin-right: 15px 
     & .btn 
       position: absolute
       bottom: -70px 
@@ -50,47 +79,12 @@
         &:hover
           background: #2b2a2c 
           color: #ffffff
-  &-card 
-    height: 370px 
-    max-width: 370px 
-    border-radius: 5px 
-    box-shadow: 0 0px 10px #6a696b 
-    margin-bottom: 30px 
-    cursor: pointer
-    transition: 0.5s
-    &:nth-child(7)
-      margin-bottom: 0
-    &:nth-child(8)
-      margin-bottom: 0
-    &:nth-child(9)
-      margin-bottom: 0 
-    &:hover
-      transform: scale(0.9)
-    & img 
-      border-top-left-radius: 5px 
-      border-top-right-radius: 5px 
-    & .desc 
-      margin-top: 15px
-      margin-bottom: 15px
-      margin-left: 15px 
-      & p 
-        text-transform: uppercase
-        font-size: 12px 
-        +reg 
-        +black
-        letter-spacing: 0.6px
-      & .date 
-        display: flex
-        justify-content: space-between
-        & h4
-          text-transform: uppercase
-          font-size: 16px 
-          +bold 
-          +black
-        & span 
-          text-transform: uppercase
-          font-size: 16px 
-          +bold 
-          +black
-          margin-right: 15px    
+    & .load-more
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      display: none 
+      &.active 
+        display: flex 
+ 
 

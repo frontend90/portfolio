@@ -164,12 +164,36 @@ h1, h2, h3, h4, h5, h6, p {
   margin-bottom: 25px;
 }
 
-.header-title .desc .social .fab {
+.header-title .desc .social a {
+  margin-left: 5px;
+}
+
+.header-title .desc .social a:first-of-type {
+  margin-left: 0;
+}
+
+.header-title .desc .social a .fas {
   font-size: 22px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin-left: 10px;
+  font-family: 'fa-solid-900';
+  width: 40px;
+  height: 40px;
+  color: #ffffff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-title .desc .social a .fab {
+  font-size: 22px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   font-family: 'fa-brands-400';
   width: 40px;
   height: 40px;
@@ -180,35 +204,22 @@ h1, h2, h3, h4, h5, h6, p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  cursor: pointer;
 }
 
-.header-title .desc .social .fab:first-of-type {
-  margin-left: 0;
+.header-title .desc .social a .fa-viber {
+  background: #665CAC;
 }
 
-.header-title .desc .social .be {
-  background: #1869ff;
+.header-title .desc .social a .fa-telegram-plane {
+  background: #0088CC;
 }
 
-.header-title .desc .social .dr {
-  background: #e51a68;
-}
-
-.header-title .desc .social .in {
-  background: #007bb6;
-}
-
-.header-title .desc .social .fb {
+.header-title .desc .social a .fb {
   background: #3a5898;
 }
 
-.header-title .desc .social .ig {
-  background: #13578a;
-}
-
-.header-title .desc .social .tw {
-  background: #56acef;
+.header-title .desc .social a .fa-at {
+  background: #B23121;
 }
 
 .header-title .desc .btn {

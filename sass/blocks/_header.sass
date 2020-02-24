@@ -71,31 +71,36 @@
       +reg
       margin-bottom: 25px 
     & .social 
-      & .fab 
-        font-size: 22px
-        display: inline-flex
-        margin-left: 10px
-        +brand 
-        width: 40px
-        height: 40px
-        color: #ffffff
-        justify-content: center
-        align-items: center
-        cursor: pointer
+      & a 
+        margin-left: 5px 
         &:first-of-type
           margin-left: 0
-      & .be 
-        background: #1869ff
-      & .dr
-        background: #e51a68
-      & .in 
-        background: #007bb6
-      & .fb 
-        background: #3a5898
-      & .ig 
-        background: #13578a
-      & .tw 
-        background: #56acef
+        & .fas 
+          font-size: 22px
+          display: inline-flex
+          +solid
+          width: 40px
+          height: 40px
+          color: #ffffff
+          justify-content: center
+          align-items: center
+        & .fab 
+          font-size: 22px
+          display: inline-flex
+          +brand 
+          width: 40px
+          height: 40px
+          color: #ffffff
+          justify-content: center
+          align-items: center
+        & .fa-viber
+          background: #665CAC
+        & .fa-telegram-plane
+          background: #0088CC
+        & .fb 
+          background: #3a5898
+        & .fa-at
+          background: #B23121
     & .btn 
       margin-top: 40px 
       & button 

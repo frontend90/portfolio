@@ -329,6 +329,8 @@ h1, h2, h3, h4, h5, h6, p {
 .portfolio .portfolio-cards .portfolio-card img {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  width: 370px;
+  height: 300px;
 }
 
 .portfolio .portfolio-cards .portfolio-card .desc {

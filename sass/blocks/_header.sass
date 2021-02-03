@@ -1,132 +1,146 @@
-.header-wrap
-  display: flex
-  justify-content: space-between
+.header 
+  min-height: 100vh 
+  position: relative
+
+.nav
+  display: grid 
+  grid-template-columns: repeat(2, max-content)
   align-items: center
-  margin-top: 20px
-  & .logo
-    display: flex
-    max-height: 57px
-    & svg 
-      height: 57px
-      width: 57px
-  & .author
-    & h4 
-      +black
-      font-size: 16px
-      +bold
-      line-height: 1.2
-      margin: 0
-      margin-left: 10px 
-    & span 
-      font-size: 12px
-      +grey
-      +reg
-      margin-left: 10px
-  & .menu 
-    & a 
-      +bold
-      +black
-      text-transform: uppercase
-      font-size: 14px
-      letter-spacing: 0.7px
-      margin-right: 35px
-      transition: 0.2s
-      &:last-of-type
-        margin-right: 25px
-      &:hover
-        border-bottom: 3px solid
-    & button 
-      +bold
-      +black
-      font-size: 14px
-      text-transform: uppercase
-      letter-spacing: 0.7px
-      border: 2px solid 
-      border-radius: 20px
-      width: 125px
-      height: 35px
-      transition: 0.2s
-      &:hover
-        color: #ffffff
-        background: #2b2a2c
-.header-title 
-  display: flex
-  margin-top: 30px
   justify-content: space-between
-  & .desc
-    margin-top: 90px 
-    & h4 
-      font-size: 32px
-      +reg
-      +black
-      line-height: 0.33
-    & h3 
-      font-size: 45px
-      +bold
-      +black
-      margin-top: 15px
-    & p 
-      font-size: 18px
-      +grey
-      +reg
-      margin-bottom: 25px 
-    & .social 
-      & a 
-        margin-left: 5px 
-        &:first-of-type
-          margin-left: 0
-        & .fas 
-          font-size: 22px
-          display: inline-flex
-          +solid
-          width: 40px
-          height: 40px
-          color: #ffffff
-          justify-content: center
-          align-items: center
-        & .fab 
-          font-size: 22px
-          display: inline-flex
-          +brand 
-          width: 40px
-          height: 40px
-          color: #ffffff
-          justify-content: center
-          align-items: center
-        & .fa-viber
-          background: #665CAC
-        & .fa-telegram-plane
-          background: #0088CC
-        & .fb 
-          background: #3a5898
-        & .fa-at
-          background: #B23121
-    & .btn 
-      margin-top: 40px 
-      & button 
-        display: inline-flex
-        text-transform: uppercase
-        font-size: 16px 
-        +reg
-        +grey
-        letter-spacing: 0.8px
-        width: 170px 
-        height: 50px 
-        border: 1px solid 
-        justify-content: center
-        align-items: center
-        border-radius: 25px 
-        margin-left: 15px 
-        transition: 0.2s
-        &:last-of-type
-          width: 200px 
-        &:first-of-type
-          margin-left: 0
-        &:hover
-          color: #ffffff
-          background: #2b2a2c
-.header-line 
-  border-bottom: 1px solid rgba(#2b2a2c, 0.1)
+  padding: 25px 0  
+
+.logo
+  position: relative
+  &::before
+    content: ''
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    left: 0
+    border-radius: 50%
+    background: #2b2a2c
+    width: 57px 
+    height: 57px 
+  &__name
+    margin-left: 70px 
+    text-transform: uppercase
+    +mont_bold 
+    font-size: 16px
+    line-height: 1.13
+    color: #2b2a2c
+  &__proff
+    margin-left: 70px 
+    margin-top: 5px 
+    text-transform: uppercase
+    line-height: 1.13
+    color: rgba(43, 42, 44, 0.7)
+
+.menu 
+  display: grid 
+  grid-template-columns: repeat(2, max-content)
+  align-items: center
+  &__btn 
+    margin-left: 30px 
+  &_btn 
+    padding: 7px 30px 
+    font-size: 14px 
+    +mont_bold 
+    letter-spacing: .7px 
+    color: #2b2a2c
+    border: 2px solid #2b2a2c
+    background: transparent 
+    &:focus
+      border: 2px solid #2b2a2c
+
+.burger
+  display: none 
+
+.main-menu
+  &__link
+    text-transform: uppercase
+    +mont_bold 
+    margin-left: 50px 
+    font-size: 14px
+    letter-spacing: .7px
+    color: #2b2a2c
+    position: relative
+    &:first-of-type
+      margin-left: 0
+    &:hover::before 
+      width: 50%
+    &::before
+      content: ''
+      position: absolute
+      bottom: -10px
+      left: 0
+      height: 3px 
+      width: 0
+      background: #2b2a2c
+      transition: .3s linear 
+
+.header-main
+  &__wrap 
+    display: grid 
+    height: calc(100vh - 104px)
+    align-content: center
+    justify-content: center
+    text-align: center
+  &__name
+    +mont_bold 
+    font-size: 45px 
+    line-height: 1.18 
+    color: #2b2a2c
+    &_small 
+      font-size: 32px 
+  &__proff
+    margin-top: 20px 
+    text-transform: uppercase
+    font-size: 18px 
+    color: rgba(43, 42, 44, 0.7)
+  &__social
+    margin-top: 35px 
+    display: grid 
+    grid-template-columns: repeat(auto-fit, minmax(40px, max-content))
+    grid-column-gap: 10px 
+    justify-content: center
+  &__link
+    display: grid 
+    align-items: center
+    justify-content: center
+    border-radius: 50%
+    width: 40px 
+    height: 40px 
+    box-shadow: 0 2px 4px 0
+    transition: .3s linear 
+    &:hover
+      box-shadow: 0 4px 2px 0
+    &_viber
+      background: rgb(123, 81, 157)
+      &:hover
+        background: rgb(123, 81, 157)
+    &_telegram
+      background: rgb(0, 136, 204)
+      &:hover
+        background: rgb(0, 136, 204)
+    &_facebook
+      background: rgb(59, 89, 152)
+      &:hover
+        background: rgb(59, 89, 152)
+    &_email
+      background: rgb(132, 132, 132)
+      &:hover
+        background: rgb(132, 132, 132)
+  &__btn
+    margin-top: 40px 
+    display: grid 
+    grid-template-columns: repeat(2, max-content)
+    grid-column-gap: 15px 
+  &__img
+    object-fit: cover 
+    width: 100%
+
+
+
 
 
 

@@ -1,13 +1,19 @@
-@import 'interface' 
+@mixin font($font_name, $file_name, $weight, $style) 
+  @font-face 
+    font-family: $font_name
+    font-display: swap
+    src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2")
+    font-weight: #{$weight}
+    font-style: #{$style}
+
+@import 'plugins/normalize'
+@import 'fonts'
+@import 'interface'
+@import 'base'
 @import 'blocks/header'
 @import 'blocks/portfolio'
-@import 'blocks/about'
-@import 'blocks/test'
-@import 'blocks/read'
 @import 'blocks/footer'
-@import 'blocks/project'
+@import 'blocks/hireMe'
 @import 'blocks/resume'
-@import 'blocks/hire'
+@import 'blocks/card'
 @import 'blocks/adaptive'
-
-

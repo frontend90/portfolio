@@ -1,55 +1,64 @@
-.footer 
-  margin-top: 125px 
+.footer
   background: #2b2a2c
-  &-wrap 
-    display: flex
-    justify-content: space-between
+  &__container 
+    background: #2b2a2c
+  &_btn 
+    background: #2b2a2c
+    border-color: #8d8d8e
+    padding: 5px 20px 
+    font-size: 14px 
+    color: #8d8d8e
+    &:focus
+      border-color: #8d8d8e
+    &::before
+      background: #000000
+  &__svg 
+    fill: #8d8d8e
+  &__wrap
+    padding: 15px 0
+    display: grid 
+    grid-template-columns: repeat(2, max-content)
     align-items: center
-    height: 60px 
-    & .social 
-      display: flex
-      & p 
-        font-size: 14px 
-        +reg 
-        +grey 
-      & a 
-        margin-left: 15px 
-        & .fas
-          +solid
-          font-size: 20px 
-          +grey 
-          transition: 0.2s
-          &:hover
-            color: #ffffff
-        & .fab 
-          +brand 
-          font-size: 20px 
-          +grey 
-          transition: 0.2s
-          &:hover
-            color: #ffffff
-    & .menu 
-      & a 
-        font-size: 14px 
-        +reg 
-        +grey 
-        margin-right: 15px 
-        transition: 0.2s
-        &:hover
-          color: #ffffff
-      & button 
-        display: inline-flex
-        text-transform: uppercase
-        font-size: 14px 
-        +reg 
-        +grey 
-        letter-spacing: 0.7px 
-        border: 1px solid #8d8d8e
-        border-radius: 20px 
-        width: 105px 
-        height: 30px 
-        justify-content: center
-        align-items: center
-        transition: 0.2s
-        &:hover
-          color: #ffffff
+    justify-content: space-between
+  &__copy
+    font-size: 14px 
+    color: #8d8d8e
+    position: relative
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      right: -15px
+      width: 1px 
+      height: 100%
+      background: #6a696b
+  &__social-link
+    display: inline-block
+    &:hover .footer__svg 
+      fill: #ffffff
+
+.block
+  &__left
+    display: grid 
+    grid-template-columns: repeat(2, max-content)
+    align-items: center
+    grid-column-gap: 30px 
+  &__right
+    display: grid 
+    grid-template-columns: repeat(2, max-content)
+    align-items: center
+    grid-column-gap: 30px 
+
+.footer-menu
+  &__link
+    display: inline-block
+    text-transform: uppercase
+    color: #8d8d8e
+    font-size: 14px 
+    margin-left: 20px 
+    &:hover
+      color: #ffffff
+    &:first-of-type
+      margin-left: 0

@@ -171,6 +171,10 @@ figure {
 img {
   vertical-align: middle;
   border-style: none;
+  display: inline-block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
 }
 
 svg {
@@ -925,12 +929,6 @@ body::before {
   grid-column-gap: 15px;
 }
 
-.header-main__img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-}
-
 .portfolio {
   padding-top: 45px;
   padding-bottom: 120px;
@@ -993,10 +991,9 @@ body::before {
 }
 
 .portfolio-item__img {
-  width: 100%;
   height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: fill;
+     object-fit: fill;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
@@ -1362,12 +1359,6 @@ body::before {
   position: absolute;
 }
 
-.parallax__img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .resume {
   position: fixed;
   top: 0;
@@ -1616,8 +1607,8 @@ body::before {
 .card-block__img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .card-block__content {

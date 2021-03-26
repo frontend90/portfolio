@@ -169,6 +169,9 @@ figure {
 img {
   vertical-align: middle;
   border-style: none;
+  display: inline-block;
+  object-fit: cover;
+  max-width: 100%;
 }
 
 svg {

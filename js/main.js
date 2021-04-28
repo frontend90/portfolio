@@ -54,13 +54,12 @@ adaptive_function();
 
 /*************  buttons (loadMore and ShowLess) ***************/
 $(document).ready(function () {
-  //$('#myList').load('externalList.html li:lt(3)');
-  $('.portfolio-item:lt(6)').show();
+  $('.portfolio-item:lt(6)').show(); //изначально кол. показывает
   $('#loadMore').click(function () {
-    $('.portfolio-item:lt(6)').show(500);
+    $('.portfolio-item:lt(40)').show(500);  //показывает кол. при клике
   });
   $('#showLess').click(function () {
-    $('.portfolio-item').not(':lt(3)').hide(200);
+    $('.portfolio-item').not(':lt(6)').hide(200); //показывает кол. при клике
   });
 });
 
